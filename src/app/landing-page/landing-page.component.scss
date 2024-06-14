@@ -1,0 +1,88 @@
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainContainer {
+    width: 98vw;
+    height: 100vh;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    margin-top: 15vh;
+    .myImg {
+        width: 30%;
+        z-index: 1;
+    }
+    img:nth-of-type(1) {
+        width: 150%;
+        height: auto;
+        position: relative;
+
+    }
+    img:nth-of-type(2) {
+        width: 27%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+.myTextContainer{
+    z-index: 3;
+    .iAm {
+        transform: rotate(-90deg);
+        font-size: 5.4vw;
+        width: 13vw;
+        margin-right: -3vw;
+    }
+    .myName {
+        font-size: 4.5vw;
+        line-height: 5vw;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 4.2vw;
+        line-height: 3vw;
+        font-weight: 400;
+        color: #9747FF;
+        margin: 0;
+    }
+}
+
+.vector {
+    width: 100%;    
+    height: 80%;
+    position: absolute;
+    top: 28vw;
+    left: 0;
+    z-index: 2;
+}
+
+.lets-talk-button {
+    
+    background-color: #70E61C;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.9vw;
+    margin-top: 1vw;
+    
+    margin-left: 30%;
+  
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    z-index: 3;
+}
+
+// div {
+//     border: 2px solid red;
+// }
+// img {
+//     border: 2px solid green;
+// }
