@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.aboutMeContainer {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    .aboutMeTextContent {
+        position: relative;
+        z-index: 5;
+        width: 70%;
+        margin-left: 5vw;
+        margin-right: 5vw;	
+        text-align: justify;
+        h1 {
+            font-size: 4.5vw;
+            font-weight: 700;
+            margin-bottom: 2vw;
+        }
+        p {
+            font-size: 1.1vw;
+            font-weight: 400;
+        }
+        .personalThings {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2vw;
+            margin-top: 2vw;
+            img {
+                width: 5vw;
+                height: auto;
+            }
+        }
+    }
+    .aboutMeImageContent {
+        position: relative;
+        z-index: 6;
+        width: 50%;
+        overflow: hidden;
+        .profileImage {
+            position: absolute;
+            z-index: 5;
+            width: 26vw;
+            height: auto;
+            border: 2px solid #70E61C;
+            border-radius: 50%;
+            right: 9vw;
+            top: 10vw;
+        }
+        .rightLine {
+            position: absolute;
+            z-index: 6;
+            width: 9vw;
+            height: 0.2vw;
+            background-color: #70E61C;
+            right: 0;
+            top: 22.6vw;
+        }
+        .profileBlur {
+            width: 40vw;
+            margin-left: 20vw;
+            opacity: 0.7;
+        }
+    }
+}

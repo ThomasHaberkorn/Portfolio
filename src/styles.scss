@@ -29,6 +29,8 @@
         color: whitesmoke;
         background-color: #141D2F;
         scroll-behavior: smooth;
+        overflow-x: hidden;
+        margin: 0;
     }
 
     /* Für Webkit-basierte Browser (Chrome, Safari) */

@@ -1,0 +1,85 @@
+.mainContainer {
+    position: relative;
+    z-index: 6 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vw;
+    .imageContainer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2vw;
+        width: 70vw;
+        margin-left: 4vw;
+        img {
+            width: 7vw;
+            height: auto;
+            margin-right: 7vw;
+            margin-top: 3vw;
+        }
+    }
+    .textContainer {
+        position: relative;
+        width: 40vw;
+        margin-right: 5vw;
+        margin-top: 2vw;
+       z-index: 6;
+        .textContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+                h1 {
+                    font-size: 4.5vw;
+                    margin-bottom: 1.5vw;
+                    }
+                .rightLine {
+                    position: relative;
+                    z-index: 6;
+                    width: 9vw;
+                    height: 0.3vw;
+                    background-color: #9747FF;
+                    right: -19vw;
+                    top: -5vw;
+                    border-radius: 5px;
+                }
+                span {
+                    text-align: center;
+                    font-size: 1.3vw;
+                    // margin-bottom: 1vw;
+                }
+                .kontakt-button {
+                    background-color: #70E61C;
+                    color: whitesmoke;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-size: 1.9vw;
+                    margin-top: 1vw;
+                    z-index: 3;
+                    &:hover {
+                        transition: 0.5s;
+                        transform: scale(1.1);
+                    }
+                }
+            }   
+    }
+}
+
+
+
+// .kontakt-button {
+//     background-color: #70E61C;
+//     color: whitesmoke;
+//     padding: 10px 20px;
+//     border-radius: 10px;
+//     font-size: 1.9vw;
+//     margin-top: 1vw;
+//     margin-left: 30%;
+//     z-index: 3;
+    
+//     &:hover {
+//         transition: 0.5s;
+//         transform: scale(1.1);
+//     }
+// }
