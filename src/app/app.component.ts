@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { NavbarComponent } from './landing-page/navbar/navbar.component';
+import { AboutmeComponent } from './landing-page/aboutme/aboutme.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutmeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

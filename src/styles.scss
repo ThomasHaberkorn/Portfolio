@@ -1,4 +1,12 @@
 
+/* poppins-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url('assets/fonts/poppins-v21-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* poppins-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -20,4 +28,33 @@
         font-family: 'Poppins', sans-serif;
         color: whitesmoke;
         background-color: #141D2F;
+        scroll-behavior: smooth;
     }
+
+    /* Für Webkit-basierte Browser (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4mm; /* Breite der Scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Hintergrund der Scrollbar */
+  border-radius: 30px; /* Border-Radius der Scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #70E61C; /* Farbe des Scrollbalkens */
+  border-radius: 30px; /* Border-Radius des Scrollbalkens */
+  border: 2mm solid black; /* Optional: Rand um den Scrollbalken, um den Hintergrund durchscheinen zu lassen */
+}
+
+/* Für Firefox */
+* {
+  scrollbar-width: thin; /* Dünne Scrollbar */
+  scrollbar-color: #70E61C black; /* Farbe des Scrollbalkens und des Hintergrunds */
+}
+
+/* Für Internet Explorer und Edge */
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
