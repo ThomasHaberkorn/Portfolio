@@ -1,0 +1,115 @@
+.mainContainer {
+    position: relative;
+    width: 100%;
+    .portfolioHeadline {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .leftLine{
+            width: 6vw;
+            height: 0.25vw;
+            background-color: #9747FF;
+            border-radius: 5px;
+        }
+        h1 {
+            font-size: 5.5vw;
+            margin: 0 2vw;
+        }
+        .rightLine{
+            width: 40vw;
+            height: 0.25vw;
+            background-color: #9747FF;
+            border-radius: 5px;
+        }
+    }
+    .project{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        gap: 5vw;
+        img {
+            width: 30vw;
+            height: auto;
+            &:nth-child(1){
+                margin-left: 10vw;
+            }
+            &:nth-child(2){
+                margin-right: 10vw;
+            }
+        }
+       
+        .textContent{
+            width: 45vw;
+            // text-align: justify;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            h2 {
+                font-size: 2.5vw;
+                font-weight: 700;
+                color:#9747FF;
+                margin: 0;
+            }
+            h3 {
+                font-size: 1.7vw;
+                font-weight: 200;
+                color: #70E61C;
+                margin: 1vw 0;
+            }
+            .buttons {
+                display: flex;
+                align-items: center;
+                gap: 5vw;
+                margin-top: 1vw;
+                .liveTest {
+                    background-color: #9747FF;
+                    color: whitesmoke;
+                    padding: 0.5vw 1.2vw;
+                    border-radius: 5px;
+                    font-size: 1.9vw;
+                    font-weight: 400;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    border-style: none;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #70E61C ;
+                    }
+                }
+                .sourceCode {
+                    border: 1.5px solid #70E61C;
+                    background-color: transparent;
+                    color: whitesmoke;
+                    padding: 0.5vw 1.2vw;
+                    border-radius: 5px;
+                    font-size: 1.9vw;
+                    font-weight: 400;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #70E61C;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.textLeft {
+    text-align: left;
+}
+.textRight {
+    text-align: right;
+}
+
+.buttonLeft {
+    justify-content: flex-start;
+}
+
+.buttonRight {
+    justify-content: flex-end;
+}

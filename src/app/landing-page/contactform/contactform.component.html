@@ -1,0 +1,55 @@
+<div class="headline">
+    <div class="leftLine"></div>
+    <h1>Kontakt</h1>
+</div>
+<div class="contactContainer">
+    <div class="textContent">
+        <h2>Haben Sie ein Problem zu lösen?</h2>
+        <p>
+            Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, mehr über Ihre
+            Ideen zu erfahren und mit meiner Arbeit zu Ihren Projekten beizutragen.
+        </p><br>
+        <p>
+            Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b>
+        </p>
+    </div>
+
+
+
+    <div class="container">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
+            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                placeholder="Your name.." required
+                [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid && name.touched}">
+            <span *ngIf="name.invalid && name.touched" class="errorSpan">Bitte geben Sie Ihren Namen ein</span>
+
+
+            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                placeholder="Your email.." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                [ngClass]="{'is-invalid': email.invalid && email.touched, 'is-valid': email.valid && email.touched}">
+            <span *ngIf="email.invalid && email.touched" class="errorSpan">Bitte geben Sie eine gültige Email-Adresse
+                ein</span>
+
+
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+                placeholder="Write something.." style="height:200px" required minlength="4"
+                [ngClass]="{'is-invalid': message.invalid && message.touched, 'is-valid': message.valid && message.touched}"></textarea>
+            <span *ngIf="message.invalid && message.touched" class="errorSpan messageSpan">Bitte geben Sie eine
+                Nachricht ein</span>
+
+            <div class="privacy">
+                <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" class="custom-checkbox"
+                    id="privacy" name="privacy" required>
+                <label for="privacy">Ich habe die <a href="#">Datenschutzbestimmungen</a> gelesen und stimme der
+                    Verarbeitung meiner Daten zu.</label>
+
+            </div>
+            <span *ngIf="privacy.invalid && privacy.touched" class="privacyError">Bitte akzeptieren Sie die
+                Datenschutzbestimmungen</span>
+            <input type="submit" value="Nachricht senden">
+
+        </form>
+    </div>
+    <img src="assets/images/purpleShadow4.png" alt="">
+</div>

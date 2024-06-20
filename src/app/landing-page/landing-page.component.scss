@@ -34,7 +34,7 @@
         transition: transform 0.5s ease-in-out;
         width: 2.5vw;
         height: auto;
-
+        cursor: pointer;
         &:hover {
             animation: rotateIn 0.5s ease-in-out;
             transform: rotate(360deg);
@@ -167,7 +167,7 @@
     transform: translateX(-50%);
     
     color: #70E61C;
-    z-index: 3;
+    z-index: 7;
     animation: moveUpDown 2s infinite;
 }
 
@@ -192,7 +192,8 @@
     margin-top: 1vw;
     margin-left: 30%;
     z-index: 3;
-    
+    border-style: none;
+    cursor: pointer;
     &:hover {
         transition: 0.5s;
         transform: scale(1.1);
