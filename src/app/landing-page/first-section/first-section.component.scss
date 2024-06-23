@@ -1,0 +1,485 @@
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.landingContactSection {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: -0vw;
+    
+    .leftLine {
+        position: relative;
+        z-index: 5;
+        margin-left: -5.5vw;
+        margin-right: 1vw;
+        width: 5vw;
+        height: 0.4vh;
+        background-color: #9747FF;
+    }
+
+    img {
+        position: relative;
+        z-index: 5;
+        margin-right: 1vw;
+        transition: transform 0.5s ease-in-out;
+        width: 2.5vw;
+        height: auto;
+        cursor: pointer;
+        &:hover {
+            animation: rotateIn 0.5s ease-in-out;
+            transform: rotate(360deg);
+        }
+
+        &:mouseleave {
+            animation: rotateOut 0.5s ease-in-out;
+            transform: rotate(0deg);
+        }
+    }
+    
+    span {
+        position: relative;
+        z-index: 5;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5vw;
+        font-weight: 200;
+        margin-left: 1vw;
+        &:hover {
+            color: #70E61C;
+        }
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mainContainer {
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    margin-top: 17vw;
+    
+    .myImg {
+        width: 30%;
+        z-index: 1;
+    }
+    
+    img:nth-of-type(1) {
+        top: -4vw;
+        width: 115%;
+        height: auto;
+        position: relative;
+        margin-bottom: -9vw;
+    }
+    
+    img:nth-of-type(2) {
+        width: 20vw;
+        height: auto;
+        position: absolute;
+    }
+}
+
+.myTextContainer {
+    z-index: 3;
+    
+    p {
+        transform: rotate(-90deg);
+        font-size: 4.8vw;
+        width: 11vw;
+        margin-right: -3vw;
+    }
+    .iAmDE {
+        transform: rotate(-90deg);
+        font-size: 3.3vw;
+        width: 11vw;
+        margin-right: -3vw;
+    } 
+    .myText {   
+        .myName {
+            font-size: 3.5vw;
+            line-height: 5vw;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 3.2vw;
+            line-height: 3vw;
+            font-weight: 400;
+            color: #9747FF;
+            margin: 0;
+        }
+    }
+
+}
+
+  .lets-talk-button {
+                background-color: #70E61C;
+                color: whitesmoke;
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 1.9vw;
+                margin-top: 1vw;
+                margin-left: 30%;
+                z-index: 3;
+                border-style: none;
+                cursor: pointer;
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                }
+            }
+
+.vectorContainer {
+    width: 100vw;
+    height: 30vw;
+    position: absolute;
+    top: 662px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    img {
+        width: 107vw;
+        height: 80%;
+    }
+}
+
+.scrollDown {
+    position: absolute;
+    width: 1.8vw;
+    height: auto;
+    top: 36vw;
+    right: 5%;
+    transform: translateX(-50%);
+    
+    color: #70E61C;
+    z-index: 7;
+    animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 2200px) {
+    .vectorContainer{
+        top: 600px !important;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .vectorContainer{
+        top: 560px !important;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .vectorContainer{
+        top: 530px !important;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .vectorContainer{
+        top: 500px !important;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .vectorContainer{
+        top: 470px !important;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .vectorContainer{
+        top: 440px !important;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .vectorContainer{
+        top: 410px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .vectorContainer{
+        top: 380px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .vectorContainer{
+        top: 350px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .vectorContainer{
+        top: 320px !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .vectorContainer{
+        top: 290px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .vectorContainer{
+        top: 485px !important;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .myTextContainer {
+        margin-top: 5vw;
+        margin-left: -6vw;
+        margin-bottom: 5vw;
+        
+            .iAm {
+                font-size: 48px;
+                width: 110px;
+            }
+            .myText {
+                .myName {
+                    font-size: 32px;
+                }
+                h2 {
+                    margin-top: 3px;
+                    font-size: 28px;
+                }
+                .lets-talk-button {
+                    font-size: 24px;
+                    margin-left: 30px;
+                    margin-top: 10px;
+                }
+            }
+        
+    }
+    .myImg {
+        img:nth-of-type(1) {
+            width: 550px;
+            height: auto;
+            margin-bottom: -150px;
+        }
+        img:nth-of-type(2) {
+            width: 320px;
+            height: auto;
+            margin-top: 100px;
+        }
+    }
+    .landingContactSection {
+        img {
+            width: 35px;
+        }
+        a {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .vectorContainer{
+        top: 420px !important;
+        height: 290px;
+        img {
+            height: 95%;
+        }
+    }
+    .scrollDown {
+        width: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+    .vectorContainer{
+        top: 400px !important;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .vectorContainer{
+        top: 330px !important;
+        height: 40%;
+        img {
+            width: 120vw;
+            margin-left: -50px;
+            transform: rotate(5deg);
+        }   
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+    .vectorContainer{
+        top: 310px !important;
+        img {
+            width: 120vw;
+            margin-left: -50px;
+            transform: rotate(5deg);
+        }   
+    }
+    .scrollDown {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vectorContainer {
+        top: 290px !important;
+            img {
+                transform: rotate(7deg);
+            }
+        }
+    .landingContactSection {
+        justify-content: center !important;
+        gap: 20px;
+        .leftLine {
+            width: 22vw;
+            margin-left: -28.5vw;
+        }
+        img {
+            width: 35px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        a {
+            display: none;
+        }
+    }
+    .myImg{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        img:nth-of-type(1) {
+            width: 400px;
+            height: auto;
+            margin-bottom: -100px;
+        }
+        img:nth-of-type(2) {
+            width: 250px;
+            height: auto;
+            margin-top: 100px;
+        }
+    
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .vectorContainer {
+        top: 370px !important;
+        height: 25% !important;
+        img {
+            width: 120vw;
+            transform: rotate(7deg);
+        }
+    }
+    .myTextContainer {
+        .iAm {
+            font-size: 40px;
+            width: 90px;
+        }
+        .myText {
+            .myName {
+                font-size: 28px;
+            }
+            h2 {
+                margin-top: 3px;
+                font-size: 24px;
+            }
+            .lets-talk-button {
+                font-size: 20px;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .vectorContainer {
+        top: 380px !important;
+    }
+    .myTextContainer {
+        p {
+            font-size: 36px;
+            width: 80px;
+        }
+        .iAmDE {
+            font-size: 20px !important;
+            width: 80px;
+        }
+        .myText {
+            .myName {
+                font-size: 24px;
+            }
+            h2 {
+                margin-top: 3px;
+                font-size: 20px;
+            }
+            .lets-talk-button {
+                font-size: 16px;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

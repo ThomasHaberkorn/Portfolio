@@ -1,6 +1,7 @@
 .mainContainer {
     position: relative;
     width: 100%;
+    padding-top: 100px;
     .portfolioHeadline {
         display: flex;
         justify-content: end;
@@ -43,17 +44,16 @@
        
         .textContent{
             width: 45vw;
-            // text-align: justify;
             margin-left: 5vw;
             margin-right: 5vw;
             h2 {
-                font-size: 2.5vw;
+                font-size: 48px;
                 font-weight: 700;
                 color:#9747FF;
                 margin: 0;
             }
             h3 {
-                font-size: 1.7vw;
+                font-size: 38px;
                 font-weight: 200;
                 color: #70E61C;
                 margin: 1vw 0;
@@ -112,4 +112,84 @@
 
 .buttonRight {
     justify-content: flex-end;
+}
+
+.rightBlur {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    width: 45vw;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+@media (max-width: 1600px){
+    .textContent {
+        h2 {
+            font-size: 40px !important;
+        }
+        h3 {
+            font-size: 32px !important;
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    .textContent {
+        h2 {
+            font-size: 36px !important;
+        }
+        h3 {
+            font-size: 28px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .joinContent {
+        flex-direction: column;
+        gap: 0 !important;
+        img {
+            margin-left: 0 !important;
+            margin-bottom: -6vw !important;
+            width: 50vw !important;
+        }
+
+    }
+    .elPollo {
+        flex-direction: column-reverse;
+        gap: 0 !important;
+        img {
+            margin-right: 0 !important;
+            margin-bottom: -6vw !important;
+            margin-top: 5vw !important;
+            width: 50vw !important;
+        }
+    }
+    .textContent {
+        text-align: center;
+        width: 70vw !important;
+        h2 {
+            font-size: 40px !important;
+        }
+        h3 {
+            font-size: 32px !important;
+        }
+    }
+    .buttons {
+        justify-content: center;
+        margin-top: 2vw !important;
+        
+    }
+    .liveTest, .sourceCode {
+        font-size: 3.5vw !important;
+        padding: 0.5vw 1.2vw !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .liveTest, .sourceCode {
+        font-size: 5vw !important;
+        padding: 0.5vw 1.2vw !important;
+    }
 }

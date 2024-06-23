@@ -1,28 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { AnimationService } from '../../animation.service';
 
 @Component({
-  selector: 'app-aboutme',
+  selector: 'app-imprint',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss'
+  templateUrl: './imprint.component.html',
+  styleUrl: './imprint.component.scss'
 })
-export class AboutmeComponent implements OnInit{
+export class ImprintComponent implements OnInit{
+
   lang: string = '';
   german: boolean = false;
   
-  constructor(
-    private animationService: AnimationService,
-    private translate: TranslateService
-    
-  ) { }
+  constructor(private translate: TranslateService) { }
  
 
   ngOnInit(): void { 
-    this.animationService.applyAnimation();
     this.lang = localStorage.getItem('lang') || 'en';
     this.german = this.lang === 'de';
     this.translate.use(this.lang);
@@ -38,5 +33,4 @@ export class AboutmeComponent implements OnInit{
     localStorage.setItem('lang', language);
     this.german = language === 'de';
   }
- 
 }

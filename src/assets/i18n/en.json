@@ -1,0 +1,116 @@
+{
+    "aboutMe": "About me",
+    "aboutMeMainPart" : "Hello and welcome to my homepage! My name is Thomas, and I'm a passionate frontend developer based near Fürth / Nuremberg. With a particular preference for modern web technologies and designs, I create interactive, user-friendly, and aesthetically pleasing websites and mobile applications. With solid knowledge of HTML, CSS, and JavaScript, I can create responsive and dynamic user interfaces. My experience also includes modern frameworks such as Angular, which allow me to create efficient applications with clean and easily maintainable code.",
+    "aboutMeSecondPart": "My passion for programming drives me to stay up to date with the latest industry trends and continuously expand my skills. I believe that life is a constant learning process and that development is an essential part of it. Through constant learning and collaboration with other developers and designers, I strive to find innovative and creative solutions. This attitude helps me to constantly improve and stay at the cutting edge.",
+    "aboutMeThirdPart": "I have realized that collaborative programming is a great way to improve my skills. Working in a team brings together different perspectives and expertise, creating an environment where innovative solutions can be developed.",
+    "iAm": "I am",
+    "letsTalk": "Let's talk",
+    "mySkills": "My skills",
+    "skilldesc": "I have gained experience in building projects with various front end technologies and concepts.",
+    "skillcontact": "Get in touch",
+    "joinDesc": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "elPollo": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "contact": "Contact",
+    "contactHeadline": "Got a Problem to solve?",
+    "contactDesc": "I am always open to new projects and challenges. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.",
+    "contactEnd": "Need a Frontend Developer?",
+    "contactMe": "Contact me!",
+    "contactBtn": "Send a message",
+    "errorName": "Please enter your name",
+    "errorEmail": "Please enter a valid email address",
+    "errorMessage": "Please enter a message",   
+    "errorPrivacy": "Please accept the privacy policy",
+    "privacyEnter": "I've read the",
+    "privacyPolicy": "Privacy Policy",
+    "privacyRead": "and agree to the processing of my data as outlined",
+    "placeholderName": "Your name...",
+    "placeholderEmail": "Your email...",
+    "placeholderMessage": "Write something...",
+    "imprint": "Imprint",
+    "policyHeader": "Privacy Policy",
+    "privacyResponsible": "Responsible for the processing within the meaning of data protection laws, in particular, the EU General Data Protection Regulation (GDPR) is:",
+    "title": "Your Rights",
+    "description": "You can exercise the following rights at any time using the contact details of our data protection officer:",
+    "right1": "Information about your data stored with us and its processing (Art. 15 GDPR),",
+    "right2": "Correction of incorrect personal data (Art. 16 GDPR),",
+    "right3": "Deletion of your data stored with us (Art. 17 GDPR),",
+    "right4": "Restriction of data processing, provided we are not yet allowed to delete your data due to legal obligations (Art. 18 GDPR),",
+    "right5": "Objection to the processing of your data by us (Art. 21 GDPR) and",
+      "right6": "Data portability, provided you have consented to data processing or have concluded a contract with us (Art. 20 GDPR).-",
+    "consentRevocation": "If you have given us consent, you can revoke it at any time with effect for the future.",
+    "complaint": "You can contact a supervisory authority at any time with a complaint, for example, the competent supervisory authority of the federal state of your residence or the authority responsible for us.",
+    "authorityList": "You can find a list of supervisory authorities (for the non-public sector) with addresses  at:",
+
+"Kontaktformular": {
+  "title": "Contact Form",
+  "processingPurpose": {
+    "title": "Type and Purpose of Processing:",
+    "description": "The data you enter will be stored for individual communication with you. A valid email address and your name are required for this purpose. This information is used to assign the request and subsequently respond to it. Providing additional information is optional."
+  },
+  "legalBasis": {
+    "title": "Legal Basis:",
+    "description": "The processing of the data entered into the contact form is based on a legitimate interest (Art. 6 para. 1 lit. f GDPR). By providing the contact form, we want to enable you to contact us easily. Your information will be stored to process the request and for possible follow-up questions. If you contact us to request an offer, the data entered in the contact form will be processed to carry out pre-contractual measures (Art. 6 para. 1 lit. b GDPR)."
+  },
+  "recipient": {
+    "title": "Recipient:",
+    "description": "Recipients of the data may be processors."
+  },
+  "storageDuration": {
+    "title": "Storage Duration:",
+    "description": "Data will be deleted no later than six months after processing the request. If a contractual relationship is established, we are subject to the statutory retention periods according to the HGB and delete your data after these periods have expired."
+  },
+  "provisionRequired": {
+    "title": "Provision Mandated or Required:",
+    "description": "The provision of your personal data is voluntary. However, we can only process your request if you provide us with your name, email address, and the reason for your request."
+  }
+},
+"SSLVerschlüsselung": {
+    "title": "SSL Encryption",
+    "description": "To protect the security of your data during transmission, we use state-of-the-art encryption procedures (e.g., SSL) over HTTPS."
+  },
+  "Widerspruchsrecht": {
+    "title": "Information about Your Right to Object under Art. 21 GDPR",
+    "individualRight": {
+      "title": "Right to Object on a Case-by-Case Basis",
+      "description": "You have the right, for reasons arising from your particular situation, to object at any time to the processing of personal data concerning you, based on Art. 6 para. 1 lit. f GDPR (data processing based on a balancing of interests); this also applies to profiling based on this provision within the meaning of Art. 4 No. 4 GDPR. If you object, we will no longer process your data unless we can demonstrate compelling legitimate grounds for the processing that override your interests, rights, and freedom or the processing serves to assert, exercise, or defend legal claims."
+    },
+    "recipient": {
+      "title": "Recipient of an Objection"
+    }
+  },
+  "Datenschutzänderung": {
+    "title": "Changes to Our Privacy Policy",
+    "description": "We reserve the right to adapt this privacy policy to ensure it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g., when introducing new services. The new privacy policy will then apply to your next visit.",
+    "link": "The privacy policy was created with the help of activeMind AG, the experts for",
+    "linkDesc": "External data protection officer"
+  },
+  "Impressum": {
+    "title": "Disclaimer – Legal Notices",
+    "contentWarning": {
+      "title": "§ 1 Content Warning",
+      "description": "The free and freely accessible content of this website has been created with the greatest possible care. However, the provider of this website does not guarantee the accuracy and timeliness of the free and freely accessible journalistic advice and news provided. Contributions marked by name reflect the opinion of the respective author and not always the opinion of the provider. Simply by calling up the free and freely accessible content, no contractual relationship is established between the user and the provider, as it lacks the provider's legal commitment."
+    },
+    "externalLinks": {
+      "title": "§ 2 External Links",
+      "description": "This website contains links to third-party websites (\"external links\"). These websites are subject to the liability of the respective operators. The provider checked the external content for any legal violations when the external links were first linked. At that time, no legal violations were apparent. The provider has no influence on the current and future design and content of the linked pages. The inclusion of external links does not mean that the provider adopts the content behind the reference or link as his own. Constant monitoring of external links is not reasonable for the provider without concrete evidence of legal violations. However, if legal violations become known, such external links will be deleted immediately."
+    },
+    "copyright": {
+      "title": "§ 3 Copyright and Performance Protection Rights",
+      "description": "The content published on this website is subject to German copyright and performance protection law. Any use not permitted by German copyright and performance protection law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the reproduction, editing, translation, storage, processing, or reproduction of content in databases or other electronic media and systems. Content and rights of third parties are marked as such. Unauthorized reproduction or distribution of individual content or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private, and non-commercial use is permitted. The presentation of this website in external frames is only allowed with written permission."
+    },
+    "specialConditions": {
+      "title": "§ 4 Special Terms of Use",
+      "description": "Insofar as special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be expressly pointed out at the appropriate place. In this case, the special terms of use apply in each individual case."
+    },
+    "source": {
+      "text": "Source",
+      "link": "https://www.fachanwalt.de/impressum-generator/"
+    }
+  }
+         
+        
+      
+      
+
+
+}

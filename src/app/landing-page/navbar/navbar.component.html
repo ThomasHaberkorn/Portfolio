@@ -1,8 +1,33 @@
 <div class="navMainContainer">
     <div class="nameContainer"><span class="green">T</span>h<span class="purple">o</span>mas</div>
     <div class="navContainer">
-        <a href="#aboutMe">About me </a>
+        <a href="#aboutMe">{{ 'aboutMe' | translate }}</a>
         <a href="#skills">Skills </a>
         <a href="#portfolio">Portfolio </a>
+        <label class="switch">
+            <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
+            <span class="slider round">
+                <img src="assets/flags/flag-en.png" class="flag-icon flag-icon-left" alt="English">
+                <img src="assets/flags/flag-de.png" class="flag-icon flag-icon-right" alt="Deutsch">
+            </span>
+        </label>
+    </div>
+    <div class="burgerMenu" [ngClass]="{'open': isMenuOpen}" (click)="openMenu()">
+        <div class="burgerLine"></div>
+        <div class="burgerLine"></div>
+        <div class="burgerLine"></div>
+    </div>
+    <div class="" id="mobileContainer">
+        <a href="#aboutMe" (click)="openMenu()">{{ 'aboutMe' | translate }} </a>
+        <a href="#skills" (click)="openMenu()">Skills </a>
+        <a href="#portfolio" (click)="openMenu()">Portfolio </a>
+        <a href="#contact" (click)="openMenu()">{{ 'contact' | translate }}</a>
+        <label class="switch">
+            <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
+            <span class="slider round">
+                <img src="assets/flags/flag-en.png" class="flag-icon flag-icon-left" alt="English">
+                <img src="assets/flags/flag-de.png" class="flag-icon flag-icon-right" alt="Deutsch">
+            </span>
+        </label>
     </div>
 </div>

@@ -1,28 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { AnimationService } from '../../animation.service';
 
 @Component({
-  selector: 'app-aboutme',
+  selector: 'app-privacy-policy',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './aboutme.component.html',
-  styleUrl: './aboutme.component.scss'
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: './privacy-policy.component.scss'
 })
-export class AboutmeComponent implements OnInit{
+export class PrivacyPolicyComponent implements OnInit {
+  
   lang: string = '';
   german: boolean = false;
-  
-  constructor(
-    private animationService: AnimationService,
-    private translate: TranslateService
-    
-  ) { }
- 
+
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void { 
-    this.animationService.applyAnimation();
     this.lang = localStorage.getItem('lang') || 'en';
     this.german = this.lang === 'de';
     this.translate.use(this.lang);
@@ -38,5 +32,4 @@ export class AboutmeComponent implements OnInit{
     localStorage.setItem('lang', language);
     this.german = language === 'de';
   }
- 
 }

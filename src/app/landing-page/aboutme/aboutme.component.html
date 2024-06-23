@@ -1,35 +1,21 @@
-<div class="mainContainer">
+<div class="mainContainer" id="aboutMe">
     <div class="aboutMeContainer">
         <div class="aboutMeTextContent">
-            <h1>About me</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eligendi ratione sit animi atque amet rem
-                hic, dolorum voluptates aspernatur, aut ipsum dicta in temporibus! Error quidem necessitatibus
-                temporibus earum voluptatibus sapiente quam consequatur obcaecati adipisci veniam sequi in commodi
-                tenetur delectus, consequuntur enim, quas quisquam. Natus in ab voluptate.
-            </p>
+            <h1 class="headline hidden">{{ 'aboutMe' | translate }}</h1>
+            <p> {{ "aboutMeMainPart" | translate }} </p>
             <div class="personalThings">
                 <img src="assets/images/idea.png" alt="">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione non dicta doloremque alias modi
-                    laudantium aliquam ab, sunt, esse assumenda id quisquam temporibus qui voluptatem perferendis quia,
-                    repellendus odio deserunt eos. Maxime vero officia sequi architecto autem esse velit vel.
-                </p>
+                <p> {{ "aboutMeSecondPart" | translate }} </p>
             </div>
             <div class="personalThings">
                 <img src="assets/images/puzzle.png" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nostrum est praesentium dolorum nisi
-                    repudiandae provident odio in numquam molestiae maiores a quibusdam ullam perferendis perspiciatis
-                    at doloribus reiciendis officia libero fugit, quis repellendus quia! Quod inventore natus corrupti
-                    impedit.
-                </p>
+                <p> {{ "aboutMeThirdPart" | translate }} </p>
             </div>
         </div>
         <div class="aboutMeImageContent">
             <img src="assets/images/profileImage1.png" alt="" class="profileImage">
             <div class="rightLine"></div>
-            <img src="assets/images/blur1.png" alt="" class="profileBlur">
         </div>
     </div>
+    <img src="assets/images/blur1.png" alt="" class="profileBlur">
 </div>

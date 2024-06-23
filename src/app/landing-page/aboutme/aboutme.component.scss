@@ -4,12 +4,21 @@
     box-sizing: border-box;
 
 }
+.mainContainer {
+    position: relative;
+    top: 69vw;
+
+    width: 100vw;
+    height: 125vw;
+    margin-top: -72vw;
+}
 .aboutMeContainer {
     display: flex ;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    padding-top: 13vw;
     .aboutMeTextContent {
         position: relative;
         z-index: 5;
@@ -42,30 +51,66 @@
         position: relative;
         z-index: 6;
         width: 50%;
-        overflow: hidden;
+        top: -18vw;
+        right: -2vw;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+            
         .profileImage {
-            position: absolute;
-            z-index: 5;
-            width: 26vw;
-            height: auto;
-            border: 2px solid #70E61C;
-            border-radius: 50%;
-            right: 9vw;
-            top: 10vw;
+          position: absolute;
+          z-index: 555;
+          width: 26vw;
+          height: auto;
+          border: 2px solid #70E61C;
+          border-radius: 50%;
+          right: 9vw;
+          top: 10vw;
         }
+      
         .rightLine {
-            position: absolute;
-            z-index: 6;
-            width: 9vw;
-            height: 0.2vw;
-            background-color: #70E61C;
-            right: 0;
-            top: 22.6vw;
+          position: absolute;
+          z-index: 666;
+          width: 9vw;
+          height: 0.2vw;
+          background-color: #70E61C;
+          right: 0;
+          top: 22.6vw;
         }
-        .profileBlur {
-            width: 40vw;
-            margin-left: 20vw;
-            opacity: 0.7;
+      }
+    
+}
+
+.profileBlur {
+    position: relative;
+    z-index: 3;
+    width: 40vw;
+    left: 70vw;
+    top: -33vw;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainContainer {
+        height: 110vw;
+    }
+    .aboutMeImageContent {
+        display: none;
+    }
+    .aboutMeTextContent {
+        width: 90% !important;
+    }
+    .aboutMeContainer {
+        p {
+            font-size: 14px !important;
         }
     }
+    .profileBlur {
+        width: 424px !important;
+        top: -500px !important;
+    }
+    .personalThings {
+        img {
+            width: 15vw !important;
+        }
+    }
+
 }

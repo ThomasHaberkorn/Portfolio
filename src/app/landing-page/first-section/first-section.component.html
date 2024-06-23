@@ -1,0 +1,30 @@
+<div class="mainContainer">
+    <div class="content">
+        <div class="myImg d-flex">
+            <img src="assets/images/doubleBlur.png" alt="">
+            <img src="assets/images/profileImage.png" alt="Thomas Haberkorn">
+        </div>
+        <div class="myTextContainer d-flex">
+            <p [ngClass]="{'iAmDE' : german }">{{ 'iAm' | translate }}</p>
+            <div class="myText">
+                <span class="myName">Thomas Haberkorn</span>
+                <h2>FRONTEND DEVELOPER</h2>
+
+                <button class="lets-talk-button"> {{ 'letsTalk' | translate }}</button>
+            </div>
+        </div>
+
+    </div>
+
+    <img class="scrollDown" src="assets/images/Scroll_down.png" alt="">
+    <div class="landingContactSection">
+        <div class="leftLine"></div>
+        <img src="assets/images/github-button.png" alt="" (click)="openGithub()">
+        <img src="assets/images/mail-button.png" alt="" (click)="openMail()">
+        <img src="assets/images/linkedin-button.png" alt="" (click)="openLinkedIn()">
+        <span>kontakt&#64;haberkorn-thomas.de</span>
+    </div>
+    <div class="vectorContainer">
+        <img class="vector" src="assets/images/vector2.png" alt="">
+    </div>
+</div>

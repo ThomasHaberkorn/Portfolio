@@ -1,4 +1,4 @@
-<div class="mainContainer">
+<div class="mainContainer" id="skills">
     <div class="imageContainer">
         <img src="assets/images/angular.png" alt="" class="skill">
         <img src="assets/images/typescript.png" alt="" class="skill">
@@ -13,11 +13,11 @@
         <img src="assets/images/greenblur2.png" alt="" class="blur">
     </div>
     <div class="textContainer">
-        <div class="textContent">
-            <h1>Meine Skills</h1>
+        <div class="textContent hiddenRight">
+            <h1 class="mySkillsHeadline">{{ 'mySkills' | translate }}</h1>
             <div class="rightLine"></div>
-            <span>Ich habe Erfahrung darin, Projekte im Frontend-Bereich zu erstellen und umzusetzen.</span><br>
-            <button class="kontakt-button"> Kontakt aufnehmen </button>
+            <span>{{ 'skilldesc' | translate }} </span><br>
+            <button class="kontakt-button"> {{'skillcontact' | translate }} </button>
         </div>
     </div>
 </div>

@@ -1,0 +1,120 @@
+{
+    "aboutMe": "Über mich",
+    "aboutMeMainPart" : "Hallo und herzlich willkommen auf meiner Homepage! Mein Name ist Thomas, ich bin leidenschaftlicher Frontend-Entwickler und komme aus der Nähe von Fürth / Nürnberg. Mit einer besonderen Vorliebe für moderne Webtechnologien und -designs erstelle ich interaktive, benutzerfreundliche und ästhetisch ansprechende Webseiten und mobile Anwendungen. Mit soliden Kenntnissen in HTML, CSS und JavaScript kann ich reaktive und dynamische Benutzeroberflächen erstellen. Meine Erfahrung umfasst auch moderne Frameworks wie Angular, die es mir ermöglichen, effiziente Anwendungen mit sauberem und einfach zu wartendem Code zu erstellen.",
+    "aboutMeSecondPart": "Meine Leidenschaft für das Programmieren treibt mich an, mich über die neuesten Branchentrends auf dem Laufenden zu halten und meine Fähigkeiten kontinuierlich zu erweitern. Ich glaube, dass das Leben ein ständiger Lernprozess ist, und Entwicklung ist ein wesentlicher Teil davon. Durch ständiges Lernen und die Zusammenarbeit mit anderen Entwicklern und Designern strebe ich danach, innovative und kreative Lösungen zu finden. Diese Einstellung hilft mir, mich ständig zu verbessern. Und ich bleibe immer am Puls der Zeit.",
+    "aboutMeThirdPart": "Ich habe erkannt, dass kollaboratives Programmieren eine hervorragende Möglichkeit bietet, meine Fähigkeiten zu verbessern. Die Zusammenarbeit im Team vereint unterschiedliche Perspektiven und Fachkenntnisse, wodurch eine Umgebung entsteht, in der innovative Lösungen entwickelt werden können.",
+    "iAm": "Ich bin",
+    "letsTalk": "Lass uns reden",
+    "mySkills": "Meine Skills",
+    "skilldesc": "Ich habe Erfahrung darin, Projekte im Frontend-Bereich zu erstellen und umzusetzen.",
+    "skillcontact": "Kontakt aufnehmen",
+    "joinDesc": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "elPollo": "Ein einfaches Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Killerhuhn zu kämpfen.",
+    "contact": "Kontakt",
+    "contactHeadline": "Haben Sie ein Problem zu lösen?",
+    "contactDesc": "Ich bin immer offen für neue Projekte und Herausforderungen. Wenn Sie ein Projekt haben, das Sie in Angriff nehmen wollen oder wenn Sie einfach nur Hallo sagen möchten, dann melden Sie sich bei mir.",
+    "contactEnd": "Brauchen Sie einen Frontend-Entwickler? Dann sind Sie hier genau richtig!",
+    "contactMe": "Kontaktieren Sie mich",
+    "contactBtn": "Nachricht senden",
+    "errorName": "Bitte geben Sie Ihren Namen ein",
+    "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "errorMessage": "Bitte geben Sie eine Nachricht ein",   
+    "errorPrivacy": "Bitte akzeptieren Sie die Datenschutzbestimmungen",
+    "privacyEnter": "Ich habe die",
+    "privacyPolicy": "Datenschutzbestimmungen",
+    "privacyRead": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "placeholderName": "Ihr Name...",
+    "placeholderEmail": "Ihre E-Mail...",
+    "placeholderMessage": "Schreiben Sie mir...",
+    "imprint": "Impessum",
+    "policyHeader": "Datenschutzerklärung",
+    "privacyResponsible": "Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:",
+    "title": "Ihre Betroffenenrechte",
+    "description": "Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:",
+    "right1": "Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),",
+    "right2": "Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),",
+    "right3": "Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),",
+    "right4": "Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten noch nicht löschen dürfen (Art. 18 DSGVO),",
+    "right5": "Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und",
+    "right6": "Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen Vertrag mit uns abgeschlossen haben (Art. 20 DSGVO).",
+    "consentRevocation": "Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.",
+    "complaint": "Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.",
+    "authorityList": "Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter:",
+    "Kontaktformular": {
+    "title": "Kontaktformular",
+    "processingPurpose": {
+      "title": "Art und Zweck der Verarbeitung:",
+      "description": "Die von Ihnen eingegebenen Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert. Hierfür ist die Angabe einer validen E-Mail-Adresse sowie Ihres Namens erforderlich. Diese dient der Zuordnung der Anfrage und der anschließenden Beantwortung derselben. Die Angabe weiterer Daten ist optional."
+    },
+    "legalBasis": {
+      "title": "Rechtsgrundlage:",
+      "description": "Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO). Durch Bereitstellung des Kontaktformulars möchten wir Ihnen eine unkomplizierte Kontaktaufnahme ermöglichen. Ihre gemachten Angaben werden zum Zwecke der Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert. Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der in das Kontaktformular eingegebenen Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO)."
+    },
+    "recipient": {
+      "title": "Empfänger:",
+      "description": "Empfänger der Daten sind ggf. Auftragsverarbeiter."
+    },
+    "storageDuration": {
+      "title": "Speicherdauer:",
+      "description": "Daten werden spätestens 6 Monate nach Bearbeitung der Anfrage gelöscht. Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen nach HGB und löschen Ihre Daten nach Ablauf dieser Fristen."
+    },
+    "provisionRequired": {
+      "title": "Bereitstellung vorgeschrieben oder erforderlich:",
+      "description": "Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns Ihren Namen, Ihre E-Mail-Adresse und den Grund der Anfrage mitteilen."
+    }
+  },    
+  "SSLVerschlüsselung": {
+    "title": "SSL-Verschlüsselung",
+    "description": "Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS."
+  },
+  "Widerspruchsrecht": {
+    "title": "Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO",
+    "individualRight": {
+      "title": "Einzelfallbezogenes Widerspruchsrecht",
+      "description": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO. Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen."
+    },
+    "recipient": {
+      "title": "Empfänger eines Widerspruchs"      
+    }
+  },
+  "Datenschutzänderung": {
+    "title": "Änderung unserer Datenschutzbestimmungen",
+    "description": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.",
+    "link": "Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für ",
+    "linkDesc": "externe Datenschutzbeauftragte"
+  },
+  "Impressum": {
+      "title": "Disclaimer – rechtliche Hinweise",
+      "contentWarning": {
+        "title": "§ 1 Warnhinweis zu Inhalten",
+        "description": "Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters."
+      },
+      "externalLinks": {
+        "title": "§ 2 Externe Links",
+        "description": "Diese Website enthält Verknüpfungen zu Websites Dritter (\"externe Links\"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht."
+      },
+      "copyright": {
+      "title": "§ 3 Urheber- und Leistungsschutzrechte",
+      "description": "Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt. Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig."
+    },
+    "specialConditions": {
+      "title": "§ 4 Besondere Nutzungsbedingungen",
+      "description": "Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen."
+    },
+    "source": {
+      "text": "Quelle",
+      "link": "https://www.fachanwalt.de/impressum-generator/"
+    }
+  }
+}
+    
+  
+  
+       
+          
+        
+    
+      
+
+
+

@@ -1,4 +1,3 @@
-/* Style inputs with type="text", select elements and textareas */
 .headline {
     display: flex; 
     justify-content: flex-start;
@@ -23,10 +22,10 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-bottom: 15vw;
+    margin-bottom: 0vw;
     .textContent{
         width: 40%;
-       margin-top: -270px;
+       margin-top: -370px;
        margin-right: 2vw;
         h2 {
             font-size: 2.8vw;
@@ -47,20 +46,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
-            // margin-top: 2vw;
-            // margin-bottom: 2vw;
-           
         
             input[type=text], [type=email], select, textarea {
                 width: 90%;
-                padding: 12px; /* Some padding */ 
-                border: 1px solid #9747FF; /* Gray border */
-                border-radius: 8px; /* Rounded borders */
-                box-sizing: border-box; /* Make sure that padding and width stays in place */
-                margin-top: 6px; /* Add a top margin */
-                margin-bottom: 24px; /* Bottom margin */
-                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+                padding: 12px; 
+                border: 1px solid #9747FF; 
+                border-radius: 8px; 
+                box-sizing: border-box;
+                margin-top: 6px; 
+                margin-bottom: 28px; 
+                resize: vertical; 
                 background-color: #141D2F;
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.3vw;
@@ -79,7 +74,6 @@
                 border-color: red !important;
             }
           
-            /* Style the submit button with a specific background color etc */
             input[type=submit] {
                 background-color: #70E61C;
                 color: white;
@@ -90,16 +84,30 @@
                 cursor: pointer;
                 margin-bottom: 2vw;
                 font-size: 1.5vw;
+                &.disabled-btn {
+                    background-color: gray;
+                    cursor: not-allowed;
+                    &:hover {
+                        background-color: gray;
+                }
+
+                &.enabled-btn {
+                    background-color: #70E61C;
+
+                    &:hover {
+                        background-color: #9747FF;
+                        transition: 0.3s;
+                        transform: scale(1.2);
+                    }
+                }
             }
-          
-            /* When moving the mouse over the submit button, add a darker green color */
+        }
             input[type=submit]:hover {
                 background-color:#9747FF;
                 transition: 0.3s;
                 scale: 1.2;
             }
           
-            /* Add a background color and some padding around the form */
             .container {
                 border-radius: 5px;
                 padding: 20px;
@@ -112,7 +120,8 @@
             .errorSpan {
                 color: red;
                 font-size: 1.2vw;
-                margin-top: -1.8vw;
+                margin-top: -22px;
+                margin-bottom: -1px;
                 position: relative;
                 bottom: 0vw;
             }
@@ -169,12 +178,107 @@
             }
         }
     }
-    img {
-        position: absolute;
-        width: 25vw;
-        margin-top: 35vw;
-        left: 0;
-        z-index: -1;
+  
+}
+
+.blur {
+    position: relative;
+    width: 34vw;
+    margin-top: -41vw;
+    left: 0px;
+    z-index: -1;
+}
+
+.up {
+    position: absolute;
+    width: 2.8vw;
+    margin-top: -4.8vw;
+    right: 4vw;
+    z-index: 7;
+    cursor: pointer;
+    &:hover {
+        animation: wobble 1s infinite;
     }
 }
 
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(7deg);
+    }
+    45% {
+        transform: rotate(-5deg);
+    }
+    60% {
+        transform: rotate(2deg);
+    }
+    75% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.contactformDE {
+    margin-top: 90px
+}
+
+@media (max-width: 1000px){
+    .contactContainer {
+        flex-direction: column;
+        padding-top: 30px;
+        .textContent {
+            width: 80%;
+            align-items: justify;
+            margin-left: 1vw;
+            margin-top: 0;
+            margin-bottom: 2vw;
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .container {
+            width: 90%;
+            form {
+                input[type=text], [type=email], select, textarea {
+                    width: 90%;
+                    font-size: 16px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                input[type=submit] {
+                    font-size: 16px;
+                }
+                .privacy {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .errorSpan {
+        font-size: 16px !important;
+    }
+    .privacyError {
+        font-size: 16px !important;
+    }
+    .up {
+        width: 40px;
+        margin-top: -50px;
+        right: 2vw;
+    }
+    .contactformDE {
+        margin-top: 20px
+    }
+}

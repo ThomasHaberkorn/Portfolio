@@ -1,0 +1,121 @@
+.mainContainer{
+    border-top: 2px solid #70E61C;
+    margin-top: -14px;
+    position: relative;
+    background-color: #141D2F;
+    z-index: 7;
+    height: 180px;
+    .footerContent {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -0.8vw;
+        .nameContainer {
+            font-size: 44px;
+            font-weight: 700;
+            margin-bottom: -10px;
+        }
+           
+        
+        .copywrite {
+            font-size: 28px;
+            font-weight: 200;
+            margin-bottom: -10px;
+        }
+        .links {
+            display: flex;
+            gap: 1.5vw;
+            cursor: pointer;
+            img {
+                width: 40px;
+                height: 40px;
+                transition: 0.6s;
+                &:hover {
+                    animation: rotateIn 0.5s ease-in-out;
+                    transform: rotate(360deg);
+                }
+        
+                &:mouseleave {
+                    animation: rotateOut 0.5s ease-in-out;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}
+.imprintContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        .imprint {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: 200;
+            cursor: pointer;
+            text-decoration: none;
+            color: whitesmoke;
+            &:hover {
+                color: #70E61C;
+            }
+        }
+}
+.purple {
+    color: #9747FF;
+}
+
+.green {
+    color: #70E61C;
+    font-size: 46px;
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .footerContent {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .nameContainer {
+            margin-bottom: 0px !important;
+        }
+        .copywrite {
+            margin-bottom: 10px !important;
+        }
+        .links {
+            gap: 5.5vw !important;
+        }
+    }
+    .imprintContainer {
+        .imprint {
+            margin-top: 30px;
+            margin-bottom:  20px;
+        }
+    }
+}

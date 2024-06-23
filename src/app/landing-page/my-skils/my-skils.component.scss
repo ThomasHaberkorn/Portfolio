@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 13vw;
+    padding-top: 100px;
     .imageContainer {
         display: flex;
         flex-wrap: wrap;
@@ -58,7 +59,6 @@
                 span {
                     text-align: center;
                     font-size: 1.3vw;
-                    // margin-bottom: 1vw;
                 }
                 .kontakt-button {
                     background-color: #70E61C;
@@ -68,6 +68,7 @@
                     font-size: 1.9vw;
                     margin-top: 1vw;
                     z-index: 3;
+                    border: none;
                     cursor: pointer;
                     &:hover {
                         transition: 0.5s;
@@ -93,5 +94,145 @@
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    .mainContainer {
+      flex-direction: row;
+      margin-top: 6vw;
+        margin-left: 2vw;
+    }
+    .textContent {
+        width: 60vw;
+        margin-left: -8vw;
+        h1 {
+            font-size: 48px !important;
+        }
+        span {
+            font-size: 16px !important;
+            margin-bottom: 1vw;
+        }
+    }
+    .kontakt-button {
+        margin-top: 25vw !important;
+        font-size: 24px !important;
+    }
+    .imageContainer {
+        margin-top: 10vw !important;
+        position: absolute;
+    }
+    .blur{
+        left: -17vw !important;
+    }
+    .rightLine {
+        display: none;
+    }
+    
+  }
+  
+@media (max-width: 850px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 14vw;
+      }
+}
+
+@media (max-width: 800px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 15vw;
+      }
+      .imageContainer {
+        margin-top: 15vw !important;
+      }
+}
+
+@media (max-width: 700px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 25vw;
+      }
+}
+
+@media (max-width: 650px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 25vw;
+      }
+}
+
+@media (max-width: 600px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 35vw;
+    }
+    .textContent {
+        span {
+            font-size: 14px !important;
+            margin-bottom: 1vw;
+        }
+    }
+    .imageContainer {
+        margin-top: 20vw !important;
+    }
+    .kontakt-button {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 50vw;
+      }
+}
+
+@media (max-width: 500px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 30vh;
+    }
+    .textContent {
+        h1 {
+            font-size: 40px !important;
+        }
+        width: 80vw;
+        margin-left: -19vw;
+    }
+    .imageContainer {
+        margin-top: 28vw !important;
+        width:72vw !important;
+        .skill{
+            width: 11vw !important;
+        }
+        .blur {
+            left: -15vw !important;
+        }
+    }
+    
+    .kontakt-button {
+        margin-top: 50vw !important;
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 35vh;
+    }
+    .imageContainer {
+        margin-top: 35vw !important;
+    }
+    .skill{
+        width: 10vw !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .mainContainer {
+        transition: 0.3s;
+        margin-top: 45vh;
     }
 }

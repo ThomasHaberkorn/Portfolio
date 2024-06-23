@@ -1,63 +1,111 @@
-
 /* poppins-200 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
-  src: url('assets/fonts/poppins-v21-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('assets/fonts/poppins-v21-latin-200.woff2') format('woff2');
 }
+
 /* poppins-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/poppins-v21-latin-regular.woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/poppins-v21-latin-regular.woff2');
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  background-color: #141D2F;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+}
+
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
   }
 
-    body {
-        font-family: 'Poppins', sans-serif;
-        color: whitesmoke;
-        background-color: #141D2F;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-        margin: 0;
-        width: 102%;
+  ::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #70e61c !important; 
+    border-radius: 10px;
+    border: 3px solid #141d2f;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5db814;
+  }
+
+
+
+  #notification-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; 
+  }
+  
+  .notification {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInOut 5s forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
     }
+    10%, 90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
 
-    /* Für Webkit-basierte Browser (Chrome, Safari) */
-::-webkit-scrollbar {
-  width: 4mm; /* Breite der Scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: black; /* Hintergrund der Scrollbar */
-  border-radius: 30px; /* Border-Radius der Scrollbar */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #70E61C; /* Farbe des Scrollbalkens */
-  border-radius: 30px; /* Border-Radius des Scrollbalkens */
-  border: 2mm solid black; /* Optional: Rand um den Scrollbalken, um den Hintergrund durchscheinen zu lassen */
-}
-
-/* Für Firefox */
-* {
-  scrollbar-width: thin; /* Dünne Scrollbar */
-  scrollbar-color: #70E61C black; /* Farbe des Scrollbalkens und des Hintergrunds */
-}
-
-/* Für Internet Explorer und Edge */
-* {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
+  .hiddenRight {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
