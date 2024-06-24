@@ -232,18 +232,31 @@
     }
 }
 
-@media screen and (max-width: 1900px) {
+@media (max-width: 1920px) {
+    .content {
+        padding-top: 140px;
+        margin-top: 3vw;
+    }
     .vectorContainer{
-        top: 840px !important;
+        top: 620px !important;
     }
     .landingContactSection {
-        margin-top: 100px;
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .vectorContainer{
+        top: 620px !important;
+    }
+    .landingContactSection {
+        margin-top: 90px;
     }
 }
 
 @media screen and (max-width: 1800px) {
     .vectorContainer{
-        top: 830px !important;
+        top: 620px !important;
     }
     .landingContactSection {
         margin-top: 70px;
@@ -252,10 +265,10 @@
 
 @media screen and (max-width: 1700px) {
     .vectorContainer{
-        top: 660px !important;
+        top: 510px !important;
     }
     .landingContactSection {
-        margin-top: 40px;
+        margin-top: 70px;
     }
     .myImg {
         img:nth-of-type(1) {
@@ -266,7 +279,7 @@
 
 @media screen and (max-width: 1600px) {
     .vectorContainer{
-        top: 640px !important;
+        top: 470px !important;
     }
     .landingContactSection {
         margin-top: 10px;
@@ -275,10 +288,10 @@
 
 @media screen and (max-width: 1500px) {
     .vectorContainer{
-        top: 600px !important;
+        top: 530px !important;
     }
     .landingContactSection {
-        margin-top: -50px;
+        margin-top: -10px;
         .span {
             font-size: 32px;
         }
@@ -291,10 +304,10 @@
 
 @media screen and (max-width: 1400px) {
     .vectorContainer{
-        top: 540px !important;
+        top: 520px !important;
     }
     .landingContactSection {
-        margin-top: -80px;
+        margin-top: -10px;
     }
     .content {
         padding-top: 180px;
@@ -302,14 +315,20 @@
 }
 
 @media screen and (max-width: 1300px) {
+    .vectorContainer{
+        top: 490px !important;
+    }
     .content{
         padding-top: 150px;
+    }
+    .landingContactSection {
+        margin-top: -40px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .landingContactSection {
-        margin-top: -20px;
+        margin-top: -10px;
         span {
             font-size: 30px !important;
         }
@@ -320,11 +339,18 @@
         }
     }
     .vectorContainer{
-        top: 500px !important;
+        top: 440px !important;
     }
 }
 
 @media screen and (max-width: 1100px) {
+
+    .vectorContainer{
+    top: 395px !important;
+    }
+    .landingContactSection {
+        margin-top: -40px;
+    }
     .content{
         padding-top: 110px;
     }
@@ -332,13 +358,13 @@
 
 @media screen and (max-width: 1000px) {
     .vectorContainer{
-        top: 485px !important;
+        top: 470px !important;
     }
     .content {
         flex-direction: column;
     }
     .myTextContainer {
-        margin-top: 5vw;
+        margin-top: 6.2vw;
         margin-left: -6vw;
         margin-bottom: 5vw;
         
@@ -392,7 +418,7 @@
 
 @media screen and (max-width: 850px) {
     .vectorContainer{
-        top: 470px !important;
+        top: 440px !important;
         height: 290px;
         img {
             height: 95%;
@@ -410,16 +436,22 @@
 
 @media screen and (max-width: 750px) {
     .vectorContainer{
-        top: 400px !important;
+        top: 450px !important;
     }
     .landingContactSection{
         margin-top: 0px;
+    }
+    .myTextContainer{
+        margin-top: 80px;
+    }
+    .scrollDown {
+        top: 79vw !important;
     }
 }
 
 @media screen and (max-width: 670px) {
     .vectorContainer{
-        top: 330px !important;
+        top: 380px !important;
         height: 40%;
         img {
             width: 120vw;
@@ -432,7 +464,7 @@
 
 @media screen and (max-width: 600px) {
     .vectorContainer{
-        top: 310px !important;
+        top: 380px !important;
         img {
             width: 120vw;
             margin-left: -50px;
@@ -456,6 +488,7 @@
     }
     .landingContactSection {
         flex-direction: column;
+        margin-left: -2vw;
         .innerDiv {
             margin-bottom: 10px;
             gap: 60px;
@@ -475,7 +508,7 @@
 
 @media screen and (max-width: 500px) {
     .vectorContainer {
-        top: 410px !important;
+        top: 360px !important;
             img {
                 transform: rotate(7deg);
             }
@@ -499,6 +532,9 @@
             margin-bottom: -10px;
         }
     }
+    .content {
+        padding-top: 65px !important;
+    }
     .myImg{
         margin-top: 100px;
         margin-bottom: 50px;
@@ -515,6 +551,7 @@
     
     }
     .myTextContainer {
+        margin-top: 50px;
         .iAmDE {
             font-size: 32px;
             width: 108px;
@@ -541,7 +578,7 @@
 @media screen and (max-width: 420px) {
 
     .vectorContainer {
-        top: 410px !important;
+        top: 420px !important;
         height: 25% !important;
         img {
             width: 120vw;
@@ -613,9 +650,10 @@
 @media screen and (max-width: 350px) {
 
     .vectorContainer {
-        top: 380px !important;
+        top: 410px !important;
     }
     .myTextContainer {
+        margin-top: 36px;
         p {
             font-size: 36px;
             width: 80px;
