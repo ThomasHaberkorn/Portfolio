@@ -24,8 +24,9 @@ export class ContactformComponent implements OnInit {
     message: '',
     privacy: ""
   };
+  messageSent = false;
 
-mailTest = true;
+mailTest = false;
 
 post = {
   endPoint: 'https://haberkorn-thomas.de/sendMail.php',
@@ -60,22 +61,25 @@ constructor(private translate: TranslateService) { }
 
 
 onSubmit(ngForm: NgForm) {
-  if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+  if (ngForm.submitted && ngForm.form.valid) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
-
+          this.messageSent = true;
           ngForm.resetForm();
+          this.hideMessageAfterDelay();
         },
         error: (error) => {
           console.error(error);
         },
         complete: () => console.info('send post complete'),
       });
-  } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-    ngForm.resetForm();
-  }
+  } 
+}
+hideMessageAfterDelay() {
+  setTimeout(() => {
+    this.messageSent = false; // Hide the message after 5 seconds
+  }, 15000);
 }
 
 goTop() {

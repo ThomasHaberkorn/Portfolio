@@ -1,12 +1,13 @@
 .mainContainer {
     position: relative;
     z-index: 6 ;
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 13vw;
-    padding-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 85px;
+    overflow: hidden;
     .imageContainer {
         display: flex;
         flex-wrap: wrap;
@@ -25,10 +26,11 @@
         .blur {
             position: absolute;
             z-index: -2;
-            width: 22vw;
+            width: 240px;
             height: auto;
-            left: 0vw;
-            top: 10vw;
+            left: 0px;
+            top: 8vw;
+            // margin-bottom: -200px
         }
     }
     .textContainer {
@@ -100,8 +102,8 @@
 @media (max-width: 1000px) {
     .mainContainer {
       flex-direction: row;
-      margin-top: 6vw;
-        margin-left: 2vw;
+        padding-top: 40px;
+        padding-bottom: 120px;
     }
     .textContent {
         width: 60vw;
@@ -123,7 +125,8 @@
         position: absolute;
     }
     .blur{
-        left: -17vw !important;
+        left: -190px !important;
+        top: -125px !important;
     }
     .rightLine {
         display: none;
@@ -132,41 +135,27 @@
   }
   
 @media (max-width: 850px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 14vw;
-      }
+    .blur {
+        top: -150px !important;
+    }
 }
 
 @media (max-width: 800px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 15vw;
-      }
+   
       .imageContainer {
         margin-top: 15vw !important;
       }
-}
-
-@media (max-width: 700px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 25vw;
+      .blur {
+        top: -80px !important;
+        left: -150px !important;
+        width: 200px !important;
       }
 }
 
-@media (max-width: 650px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 25vw;
-      }
-}
+
 
 @media (max-width: 600px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 35vw;
-    }
+  
     .textContent {
         span {
             font-size: 14px !important;
@@ -175,24 +164,16 @@
     }
     .imageContainer {
         margin-top: 20vw !important;
+        margin-bottom: 25px !important;
     }
     .kontakt-button {
         font-size: 20px !important;
     }
 }
 
-@media (max-width: 550px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 50vw;
-      }
-}
 
 @media (max-width: 500px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 30vh;
-    }
+    
     .textContent {
         h1 {
             font-size: 40px !important;
@@ -207,32 +188,31 @@
             width: 11vw !important;
         }
         .blur {
-            left: -15vw !important;
-        }
+            top: -40px !important;
+            left: -150px !important;
+            width: 180px !important;
+          }
     }
     
     .kontakt-button {
         margin-top: 50vw !important;
         font-size: 20px !important;
     }
+  
 }
 
 @media (max-width: 380px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 35vh;
-    }
     .imageContainer {
         margin-top: 35vw !important;
+        .blur {
+            top: -70px !important;
+            left: -110px !important;
+            width: 180px !important;
+          }
     }
     .skill{
         width: 10vw !important;
     }
+   
 }
 
-@media (max-width: 350px) {
-    .mainContainer {
-        transition: 0.3s;
-        margin-top: 45vh;
-    }
-}

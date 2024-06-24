@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit{
 
   ngOnInit(): void {
     this.closeMobileMenu();
-    this.lang = localStorage.getItem('lang') || 'en';
+    this.lang = localStorage.getItem('lang') || 'de';
     this.translate.use(this.lang);
   }
 

@@ -26,9 +26,11 @@
 
             <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                 placeholder='{{ "placeholderEmail" | translate }}' required
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                 [ngClass]="{'is-invalid': email.invalid && email.touched, 'is-valid': email.valid && email.touched}">
             <span *ngIf="email.invalid && email.touched" class="errorSpan">{{ "errorEmail" | translate }}</span>
+
+
 
 
             <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
@@ -49,8 +51,11 @@
                 }}</span>
             <input type="submit" value='{{ "contactBtn" | translate }}' [disabled]="contactForm.invalid"
                 [ngClass]="{'disabled-btn': contactForm.invalid, 'enabled-btn': contactForm.valid}">
-
+            <div *ngIf="messageSent" class="successMessage">
+                {{ "messageSentSuccess" | translate }}
+            </div>
         </form>
+
     </div>
 
 </div>

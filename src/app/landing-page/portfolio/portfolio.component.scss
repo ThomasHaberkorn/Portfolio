@@ -1,7 +1,6 @@
 .mainContainer {
     position: relative;
     width: 100%;
-    padding-top: 100px;
     .portfolioHeadline {
         display: flex;
         justify-content: end;
@@ -13,7 +12,7 @@
             border-radius: 5px;
         }
         h1 {
-            font-size: 5.5vw;
+            font-size: 96px;
             margin: 0 2vw;
         }
         .rightLine{
@@ -146,6 +145,14 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .portfolioHeadline {
+        h1 {
+            font-size: 80px !important;
+        }
+        .rightLine {
+            width: 27vw !important;
+        }
+    }
     .joinContent {
         flex-direction: column;
         gap: 0 !important;
@@ -192,4 +199,50 @@
         font-size: 5vw !important;
         padding: 0.5vw 1.2vw !important;
     }
+    .portfolioHeadline {
+        h1 {
+            font-size: 60px !important;
+        }
+        .rightLine {
+            width: 20vw !important;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .portfolioHeadline {
+        h1 {
+            font-size: 55px !important;
+        }
+        .rightLine {
+            width: 15vw !important;
+        }
+    }
+   
+}
+
+@media (max-width: 400px){
+    .portfolioHeadline {
+        h1 {
+            font-size: 50px !important;
+        }
+        .rightLine {
+            width: 10vw !important;
+        }
+    }
+    .textContent {
+        h2 {
+            font-size: 34px !important;
+        }
+        h3 {
+            font-size: 20px !important;
+        }
+    }
+    .liveTest{
+        padding: 7px !important;
+    }
+    .sourceCode{
+        padding: 7px !important;
+    }
+    
 }

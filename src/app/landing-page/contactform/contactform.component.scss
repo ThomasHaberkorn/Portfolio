@@ -11,7 +11,7 @@
         margin-right: 2vw;
     }
     h1 {
-        font-size: 5.5vw;
+        font-size: 96px;
         font-weight: 700;
         margin-left: 0vw;
     }
@@ -229,6 +229,19 @@
     margin-top: 90px
 }
 
+.successMessage {
+    position: absolute;
+    z-index: 1000;
+    background-color: #e0ece3;
+    color: #9747FF;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+
 @media (max-width: 1000px){
     .contactContainer {
         flex-direction: column;
@@ -280,5 +293,60 @@
     }
     .contactformDE {
         margin-top: 20px
+    }
+    .headline {
+        margin-top: 100px;
+        .leftLine {
+            width:  65px;
+        }
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .headline {
+        .leftLine {
+            width:  55px;
+        }
+        h1 {
+            font-size: 65px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .headline {
+        .leftLine {
+            width:  45px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 470px){
+    .successMessage{
+        font-size: 14px;
+        width: 210px;
+    }
+    .headline{
+        .leftLine {
+            width:  35px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .errorSpan {
+        font-size: 12px !important;
+    }
+    .privacyError {
+        font-size: 12px !important;
+    }
+    .mainContainer {
+        padding-bottom: 100px;
     }
 }
