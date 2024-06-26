@@ -115,12 +115,9 @@
             flex-direction: column;
             // margin-top: 20px;
             // margin-bottom: 30px;
-            .nameContainer {
-                // margin-bottom: 0px !important;
-                margin-top: 20px !important;
-            }
+            
             .copywrite {
-                margin-bottom: 1px !important;
+                margin-bottom: 0px !important;
             }
             .links {
                 gap: 5.5vw !important;
@@ -128,10 +125,10 @@
         }
     }
     
-    .imprintContainer {
-        .imprint {
-            // margin-top: 20px;
-            margin-bottom:  20px;
-        }
-    }
+    // .imprintContainer {
+    //     .imprint {
+    //         // margin-top: 20px;
+    //         margin-bottom:  20px;
+    //     }
+    // }
 }

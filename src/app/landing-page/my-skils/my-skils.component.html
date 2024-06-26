@@ -23,7 +23,8 @@
 
                     <span>{{ 'skilldesc' | translate }} </span><br>
                 </div>
-                <button class="kontakt-button" onclick="document.getElementById('contact').scrollIntoView();">
+                <button class="kontakt-button"
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
                     {{'skillcontact' | translate }}
                 </button>
             </div>
