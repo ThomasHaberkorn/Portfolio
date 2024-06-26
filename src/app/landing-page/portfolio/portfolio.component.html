@@ -1,35 +1,37 @@
 <div class="mainContainer" id="portfolio">
     <div class="portfolioHeadline hidden">
+        <div class="line"></div>
         <div class="leftLine"></div>
         <h1>Portfolio</h1>
         <div class="rightLine"></div>
     </div>
-
-    <div class="joinContent project">
-        <img src="assets/images/join.png" alt="">
-        <div class="joinTextArea textContent textLeft">
-            <h2>join</h2>
-            <h3>Angular | Typescript | HTML | CSS | Firebase</h3>
-            <span> {{ 'joinDesc' | translate }} </span>
-            <div class="buttons buttonLeft">
-                <button class="liveTest" (click)="join()">Live test</button>
-                <button class="sourceCode" (click)="joinGit()">Github</button>
+</div>
+<div class="projectContainer">
+    <div class="innerProjectContainer">
+        <div class="joinContent project">
+            <img src="assets/images/join.png" alt="">
+            <div class="joinTextArea textContent textLeft">
+                <h2>join</h2>
+                <h3>Angular | Typescript | HTML | CSS | Firebase</h3>
+                <span> {{ 'joinDesc' | translate }} </span>
+                <div class="buttons buttonLeft">
+                    <button class="liveTest" (click)="join()">Live test</button>
+                    <button class="sourceCode" (click)="joinGit()">Github</button>
+                </div>
             </div>
         </div>
-    </div>
-    <img src="assets/images/purpleShadow3.png" class="rightBlur" alt="">
-    <div class="elPollo project">
-        <div class="elPolloArea textContent textRight">
-            <h2>El Pollo loco</h2>
-            <h3>JavaScript | HTML | CSS</h3>
-            <span> {{ 'elPollo' | translate }} </span>
-            <div class="buttons buttonRight">
-                <button class="liveTest" (click)="elPollo()">Live test</button>
-                <button class="sourceCode" (click)="elPolloGit()">Github</button>
+        <!-- <img src="assets/images/purpleShadow3.png" class="rightBlur" alt=""> -->
+        <div class="elPollo project">
+            <div class="elPolloArea textContent textRight">
+                <h2>El Pollo loco</h2>
+                <h3>JavaScript | HTML | CSS</h3>
+                <span> {{ 'elPollo' | translate }} </span>
+                <div class="buttons buttonRight">
+                    <button class="liveTest" (click)="elPollo()">Live test</button>
+                    <button class="sourceCode" (click)="elPolloGit()">Github</button>
+                </div>
             </div>
+            <img src="assets/images/elpollo.png" alt="">
         </div>
-        <img src="assets/images/elpollo.png" alt="">
-
     </div>
-
 </div>

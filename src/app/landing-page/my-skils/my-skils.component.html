@@ -1,25 +1,34 @@
 <div class="mainContainer" id="skills">
-    <div class="imageContainer">
-        <img src="assets/images/angular.png" alt="" class="skill">
-        <img src="assets/images/typescript.png" alt="" class="skill">
-        <img src="assets/images/javascript.png" alt="" class="skill">
-        <img src="assets/images/html.png" alt="" class="skill">
-        <img src="assets/images/firebase.png" alt="" class="skill">
-        <img src="assets/images/git.png" alt="" class="skill">
-        <img src="assets/images/css.png" alt="" class="skill">
-        <img src="assets/images/rest-api.png" alt="" class="skill">
-        <img src="assets/images/scrum.png" alt="" class="skill">
-        <img src="assets/images/material.png" alt="" class="skill">
-        <img src="assets/images/greenblur2.png" alt="" class="blur">
-    </div>
-    <div class="textContainer">
-        <div class="textContent hiddenRight">
-            <h1 class="mySkillsHeadline">{{ 'mySkills' | translate }}</h1>
-            <div class="rightLine"></div>
-            <span>{{ 'skilldesc' | translate }} </span><br>
-            <button class="kontakt-button" onclick="document.getElementById('contact').scrollIntoView();">
-                {{'skillcontact' | translate }}
-            </button>
+    <div class="leftLine"></div>
+    <img src="assets/images/greenblur2.png" alt="" class="blur">
+    <div class="innerContainer">
+
+        <div class="imageContainer">
+            <img src="assets/images/angular.png" alt="" class="skill">
+            <img src="assets/images/typescript.png" alt="" class="skill">
+            <img src="assets/images/javascript.png" alt="" class="skill">
+            <img src="assets/images/html.png" alt="" class="skill">
+            <img src="assets/images/firebase.png" alt="" class="skill">
+            <img src="assets/images/git.png" alt="" class="skill">
+            <img src="assets/images/css.png" alt="" class="skill">
+            <img src="assets/images/rest-api.png" alt="" class="skill">
+            <img src="assets/images/scrum.png" alt="" class="skill">
+            <img src="assets/images/material.png" alt="" class="skill">
+
         </div>
+        <div class="textContainer">
+            <div class="textContent hiddenRight">
+                <div class="textAlignRight">
+                    <h1 class="mySkillsHeadline">{{ 'mySkills' | translate }}</h1>
+
+                    <span>{{ 'skilldesc' | translate }} </span><br>
+                </div>
+                <button class="kontakt-button" onclick="document.getElementById('contact').scrollIntoView();">
+                    {{'skillcontact' | translate }}
+                </button>
+            </div>
+        </div>
+
     </div>
+    <div class="rightLine hiddenRight"></div>
 </div>

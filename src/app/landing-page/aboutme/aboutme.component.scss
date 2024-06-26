@@ -5,86 +5,144 @@
 
 }
 .aboutMeMainContainer{
-    width: 100vw;	
-}
-.mainContainer {
-  margin-bottom: 40px;
-}
-.aboutMeContainer {
-    display: flex ;
+    width: 100%;	
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 7vw;
-    padding-bottom: 40px;
-    .aboutMeTextContent {
-        position: relative;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-top: 100px;
+    
+    .leftLine {
+        flex-grow: 1;
+    }
+    .rightLine {
+        z-index: 6;
+        height: 2px;
+        background-color: #70E61C;
+        flex-grow: 1;
+        min-width: 100px;
+        margin-bottom: -100px;
+    }
+    .aboutMeContainer {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1400px;
         z-index: 5;
-        width: 70%;
-        margin-left: 5vw;
-        margin-right: 5vw;	
-        text-align: justify;
-        h1 {
-            font-size: 96px;
-            font-weight: 700;
-            margin-bottom: 2vw;
-        }
-        p {
-            font-size: 1.1vw;
-            font-weight: 400;
-        }
-        .personalThings {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2vw;
-            margin-top: 2vw;
-            img {
-                width: 5vw;
-                height: auto;
+        // margin-bottom: 100px;
+        
+        .aboutInnerContent {
+            width: 60%;
+            padding-left: 20px;
+            }
+            .aboutMeTextContent {
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: justify;
+                h1 {
+                    font-size: 90px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .personalThings {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    margin-top: 20px;
+                    img {
+                        width: 50px;
+                        height: auto;
+                    }
+                }
             }
         }
-    }
-    .aboutMeImageContent {
-        position: relative;
-        z-index: 6;
-        width: 50%;
-        top: -18vw;
-        right: -2vw;
-        transition: opacity 1s ease-out, transform 1s ease-out;
+        .aboutMeImageContent {
+            display: flex;
+            align-items: center;
+            margin-left: 61px;
+            margin-bottom: -100px;
+            .profileImage {
+              z-index: 555;
+              width: 500px;
+              height: auto;
+              border: 2px solid #70E61C;
+              border-radius: 50%;
+            }
             
-        .profileImage {
-          position: absolute;
-          z-index: 555;
-          width: 26vw;
-          height: auto;
-          border: 2px solid #70E61C;
-          border-radius: 50%;
-          right: 9vw;
-          top: 10vw;
+          }
+          
         }
-      
-        .rightLine {
-          position: absolute;
-          z-index: 666;
-          width: 9vw;
-          height: 0.2vw;
-          background-color: #70E61C;
-          right: 0;
-          top: 22.6vw;
-        }
-      }
     
-}
-
 .profileBlur {
     position: absolute;
     z-index: 3;
-    width: 470px;
-    right: -111px;
-    bottom: -170px;
+    right: -180px;
     opacity: 0.7;
+}
+
+@media (max-width: 1500px) {
+    .aboutMeContainer {
+        margin-right: 0px !important;
+        margin-left: -15px !important;
+        width: 80% !important;
+        .aboutInnerContent {
+            width: 70%;
+            .aboutMeTextContent {
+                width: 100% !important;
+                padding-left: 0px !important;
+                h1 {
+                    font-size: 70px !important;
+                }
+            }
+        }
+        .aboutMeImageContent{
+            margin-right: -0px;
+            img {
+                width: 450px !important;
+            }
+        }
+        .rightLine {
+            min-width: 0px !important;
+        }
+    }
+    
+}
+
+@media (max-width: 1300px) {
+    .aboutMeContainer {
+        .aboutInnerContent {
+            .aboutMeTextContent {
+                h1 {
+                    font-size: 55px !important;
+                }
+            }
+        }      
+        .aboutMeImageContent {
+            .profileImage {
+                width: 400px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutMeContainer {
+        width: 90% !important;
+
+        
+    }
+    .rightLine {
+        min-width: 50px !important;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -92,7 +150,7 @@
         height: 110vw;
     }
     .aboutMeImageContent {
-        display: none;
+        display: none !important;
     }
     .aboutMeTextContent {
         width: 90% !important;
@@ -101,9 +159,13 @@
         }
     }
     .aboutMeContainer {
-        p {
-            font-size: 14px !important;
+        .aboutInnerContent {
+            width: 95% !important;
+            p {
+                font-size: 14px !important;
+            }
         }
+        
     }
     .profileBlur {
         width: 424px !important;
@@ -114,21 +176,49 @@
             width: 15vw !important;
         }
     }
+    .leftLine {
+        display: none;
+    }
+    .rightLine {
+        display: none;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .aboutMeContainer {
+        .aboutInnerContent {
+            .aboutMeTextContent {
+                h1 {
+                    font-size: 50px !important;
+                }
+            }
+        }
+    }
+    
 
 }
 
 @media (max-width: 600px){
-    .aboutMeTextContent {
-        h1 {
-            font-size: 56px !important;
+    .aboutMeContainer {
+        .aboutInnerContent {
+            .aboutMeTextContent {
+                h1 {
+                    font-size: 40px !important;
+                }
+            }
         }
     }
 }
 
 @media (max-width: 500px){
-    .aboutMeTextContent {
-        h1 {
-            font-size: 44px !important;
+    .aboutMeContainer {
+        .aboutInnerContent {
+            .aboutMeTextContent {
+                h1 {
+                    font-size: 35px !important;
+                }
+            }
         }
     }
 }

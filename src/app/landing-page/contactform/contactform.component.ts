@@ -4,6 +4,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AnimationService } from '../../animation.service';
 
 @Component({
   selector: 'app-contactform',
@@ -39,7 +40,10 @@ post = {
   },
 };
 
-constructor(private translate: TranslateService) { }
+constructor(
+  private animationService: AnimationService,
+  private translate: TranslateService) {}
+
  
 
   ngOnInit(): void { 
@@ -78,8 +82,8 @@ onSubmit(ngForm: NgForm) {
 }
 hideMessageAfterDelay() {
   setTimeout(() => {
-    this.messageSent = false; // Hide the message after 5 seconds
-  }, 15000);
+    this.messageSent = false; // Hide the message after 4 seconds
+  }, 4000);
 }
 
 goTop() {

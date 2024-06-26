@@ -14,25 +14,33 @@ p {
 .d-none {
     display: none !important;
 }
-
-.navMainContainer {
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
+    z-index: 10;
+    width: 100vw;
+    top: 0;
+    background-color: #141D2F;
+    
+}
+.navMainContainer {
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
-    width: 100vw;
-    height: 80px;
-    top: 0;
     background-color: #141D2F;
+    max-width: 1920px;
     .nameContainer {
         font-size: 42px;
         font-weight: 700;
-        margin-left: 7vw;
+        margin-left: 30px;
     }
     .navContainer {
-        margin-right: 7vw;
-        margin-bottom: -1.5vw;
+        margin-right: 30px;
+        margin-bottom: -2px;
         font-size: 28px;
         font-weight: 200;
         a {

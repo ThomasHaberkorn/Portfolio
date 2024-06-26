@@ -1,28 +1,38 @@
 .mainContainer{
     border-top: 2px solid #70E61C;
-    margin-top: -14px;
+    // margin-top: -14px;
     position: relative;
     background-color: #141D2F;
     z-index: 7;
     height: 180px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 20px;
+    overflow: hidden;
+    .footerContainer {
+        max-width: 1400px;
+        width: 100%;
     .footerContent {
-        margin-top: 50px;
+        
+        // margin-top: 50px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        margin-bottom: -0.8vw;
+        // margin-bottom: -0.8vw;
         .nameContainer {
             font-size: 44px;
             font-weight: 700;
-            margin-bottom: -10px;
+            // margin-bottom: -0px;
         }
            
         
         .copywrite {
             font-size: 28px;
             font-weight: 200;
-            margin-bottom: -10px;
+            // margin-bottom: -10px;
         }
         .links {
             display: flex;
@@ -45,12 +55,13 @@
         }
     }
 }
+}
 .imprintContainer {
     width: 100%;
     display: flex;
     justify-content: center;
         .imprint {
-            margin-top: 15px;
+            // margin-top: 15px;
             font-size: 20px;
             font-weight: 200;
             cursor: pointer;
@@ -98,23 +109,28 @@
 }
 
 @media (max-width: 700px) {
-    .footerContent {
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        .nameContainer {
-            margin-bottom: 0px !important;
-        }
-        .copywrite {
-            margin-bottom: 10px !important;
-        }
-        .links {
-            gap: 5.5vw !important;
+    .mainContainer {
+        height: 200px;
+        .footerContent {
+            flex-direction: column;
+            // margin-top: 20px;
+            // margin-bottom: 30px;
+            .nameContainer {
+                // margin-bottom: 0px !important;
+                margin-top: 20px !important;
+            }
+            .copywrite {
+                // margin-bottom: 10px !important;
+            }
+            .links {
+                gap: 5.5vw !important;
+            }
         }
     }
+    
     .imprintContainer {
         .imprint {
-            margin-top: 30px;
+            // margin-top: 20px;
             margin-bottom:  20px;
         }
     }

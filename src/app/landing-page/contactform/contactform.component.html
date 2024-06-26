@@ -1,63 +1,78 @@
-<div class="headline hidden" id="contact">
-    <div class="leftLine"></div>
-    <h1> {{ "contact" | translate }} </h1>
-</div>
-<div class="contactContainer">
-    <div class="textContent">
-        <h2 [ngClass]="{'contactformDE': german }">{{ "contactHeadline" | translate }}</h2>
-        <p>
-            {{ "contactDesc" | translate }}
-        </p><br>
-        <p>
-            {{ "contactEnd" | translate }} <b>{{ "contactMe" | translate }}</b>
-        </p>
+<div class="mainContainer">
+    <div class="headlineContainer" id="contact">
+        <div class="headline">
+            <div class="leftLine"></div>
+            <h1> {{ "contact" | translate }} </h1>
+            <div class="rightLine"></div>
+        </div>
     </div>
 
-
-
-    <div class="container">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
-            <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                placeholder='{{ "placeholderName" | translate }}' required
-                [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid && name.touched}">
-            <span *ngIf="name.invalid && name.touched" class="errorSpan"> {{ "errorName" | translate }} </span>
-
-
-            <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                placeholder='{{ "placeholderEmail" | translate }}' required
-                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                [ngClass]="{'is-invalid': email.invalid && email.touched, 'is-valid': email.valid && email.touched}">
-            <span *ngIf="email.invalid && email.touched" class="errorSpan">{{ "errorEmail" | translate }}</span>
+    <div class="contactContainer">
+        <div class="contactContent">
+            <div class="textContent">
+                <h2 [ngClass]="{'contactformDE': german }">{{ "contactHeadline" | translate }}</h2>
+                <p>
+                    {{ "contactDesc" | translate }}
+                </p><br>
+                <p>
+                    {{ "contactEnd" | translate }} <b>{{ "contactMe" | translate }}</b>
+                </p>
+            </div>
 
 
 
+            <div class="container">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-            <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
-                placeholder='{{ "placeholderMessage" | translate }}' style="height:200px" required minlength="4"
-                [ngClass]="{'is-invalid': message.invalid && message.touched, 'is-valid': message.valid && message.touched}"></textarea>
-            <span *ngIf="message.invalid && message.touched" class="errorSpan messageSpan">{{ "errorMessage" | translate
-                }}</span>
+                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        placeholder='{{ "placeholderName" | translate }}' required
+                        [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid && name.touched}">
+                    <span *ngIf="name.invalid && name.touched" class="errorSpan"> {{ "errorName" | translate }} </span>
 
-            <div class="privacy">
-                <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" class="custom-checkbox"
-                    id="privacy" name="privacy" required>
-                <label for="privacy">{{ "privacyEnter" | translate }}
-                    <a [routerLink]="['/privacy-policy']"> {{ "privacyPolicy" | translate }} </a>
-                    {{ "privacyRead" | translate }}</label>
+
+                    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        placeholder='{{ "placeholderEmail" | translate }}' required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        [ngClass]="{'is-invalid': email.invalid && email.touched, 'is-valid': email.valid && email.touched}">
+                    <span *ngIf="email.invalid && email.touched" class="errorSpan">{{ "errorEmail" | translate }}</span>
+
+
+
+
+                    <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+                        placeholder='{{ "placeholderMessage" | translate }}' style="height:200px" required minlength="4"
+                        [ngClass]="{'is-invalid': message.invalid && message.touched, 'is-valid': message.valid && message.touched}"></textarea>
+                    <span *ngIf="message.invalid && message.touched" class="errorSpan messageSpan">{{ "errorMessage" |
+                        translate
+                        }}</span>
+
+                    <div class="privacy">
+                        <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox"
+                            class="custom-checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">{{ "privacyEnter" | translate }}
+                            <a [routerLink]="['/privacy-policy']"> {{ "privacyPolicy" | translate }} </a>
+                            {{ "privacyRead" | translate }}</label>
+
+                    </div>
+                    <span *ngIf="privacy.invalid && privacy.touched" class="privacyError">{{ "errorPrivacy" | translate
+                        }}</span>
+                    <input type="submit" value='{{ "contactBtn" | translate }}' [disabled]="contactForm.invalid"
+                        [ngClass]="{'disabled-btn': contactForm.invalid, 'enabled-btn': contactForm.valid}">
+                    <div *ngIf="messageSent" class="successMessage">
+                        {{ "messageSentSuccess" | translate }}
+                    </div>
+
+                </form>
 
             </div>
-            <span *ngIf="privacy.invalid && privacy.touched" class="privacyError">{{ "errorPrivacy" | translate
-                }}</span>
-            <input type="submit" value='{{ "contactBtn" | translate }}' [disabled]="contactForm.invalid"
-                [ngClass]="{'disabled-btn': contactForm.invalid, 'enabled-btn': contactForm.valid}">
-            <div *ngIf="messageSent" class="successMessage">
-                {{ "messageSentSuccess" | translate }}
-            </div>
-        </form>
-
+        </div>
     </div>
-
 </div>
-<img class="blur" src="assets/images/purpleShadow4.png" alt="">
-<img class="up" src="assets/images/upButton.png" alt="" (click)="goTop()">
+<div class="upContainer">
+    <div class="upButton">
+        <img class="up" src="assets/images/upButton.png" alt="" (click)="goTop()">
+    </div>
+</div>
+<div class="blurContainer">
+    <img class="blur" src="assets/images/purpleShadow4.png" alt="">
+</div>
