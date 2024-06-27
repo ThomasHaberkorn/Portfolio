@@ -82,7 +82,7 @@ onSubmit(ngForm: NgForm) {
 }
 hideMessageAfterDelay() {
   setTimeout(() => {
-    this.messageSent = false; // Hide the message after 4 seconds
+    this.messageSent = false; 
   }, 4000);
 }
 

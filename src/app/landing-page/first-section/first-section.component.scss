@@ -38,11 +38,9 @@
                 width: 38%;
                 z-index: 1;
                 img:nth-of-type(1) {
-                    // top: -100px;
                     width: 600px;
                     height: auto;
                     position: relative;
-                    // margin-bottom: -14vw;
                 }
                 
                 img:nth-of-type(2) {
@@ -74,28 +72,17 @@
         border-radius: 4px;
         min-width: 100px;
         margin-right: 16px;
-        // margin-left: -700px
     }
     .rightLine {
         flex-grow: 1;
     }
     .landingContactSection {
-        // position: absolute;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
         display: flex;
-    align-items: center;
+        align-items: center;
         margin-top: 0px;
         width: 100%;
         max-width: 1400px;
         
-        // .innerDiv{
-        //     display: flex;
-        //     justify-content: space-between;
-        //     max-width: 1920px;
-        //     align-items: center;
-        //     padding-right: 20px;
             img {
                 position: relative;
                 z-index: 5;
@@ -130,7 +117,6 @@
           }    
         
     }
-// }
 
 
 @keyframes rotateIn {
@@ -317,14 +303,6 @@
     }
 }
 
-// @media screen and (max-width: 2000px) {
-//     .vectorContainer{
-//         top: 860px !important;
-//     }
-//     .landingContactSection {
-//         margin-top: 130px;
-//     }
-// }
 
 @media (max-width: 1920px) {
     .content {
@@ -334,28 +312,13 @@
     .vectorContainer{
         top: 530px !important;
     }
-    // .landingContactSection {
-    //     margin-top: -210px;
-    // }
 }
 
 @media screen and (max-width: 1900px) {
     .vectorContainer{
         top: 540px !important;
     }
-    // .landingContactSection {
-    //     margin-top: 90px;
-    // }
 }
-
-// @media screen and (max-width: 1800px) {
-//     .vectorContainer{
-//         top: 620px !important;
-//     }
-//     .landingContactSection {
-//         margin-top: 70px;
-//     }
-// }
 
 @media screen and (max-width: 1700px) {
     .vectorContainer{
@@ -396,12 +359,6 @@
     .vectorContainer{
         top: 530px !important;
     }
-    // .landingContactSection {
-    //     margin-top: -10px;
-    //     .span {
-    //         font-size: 32px;
-    //     }
-    // }
     .content {
         padding-top: 110px;
     }
@@ -418,9 +375,6 @@
         
         }
     }
-    // .content {
-    //     padding-top: 180px;
-    // }
 }
 
 @media screen and (max-width: 1300px) {
@@ -451,13 +405,6 @@
             }
         }
     }
-   
-    // .content{
-    //     padding-top: 150px;
-    // }
-    // .landingContactSection {
-    //     margin-top: -40px;
-    // }
 }
 
 @media screen and (max-width: 1200px) {
@@ -491,11 +438,7 @@
             }
         }
     }
-    // .myImg {
-    //     img:nth-of-type(1) {
-    //         width: 600px;
-    //     }
-    // }
+ 
     .vectorContainer{
         top: 560px !important;
     }
@@ -571,7 +514,6 @@
         }
     }
     .scrollDown {
-        // right: -125% !important;
         display: none !important;
     }
    
@@ -615,11 +557,6 @@
 @media screen and (max-width: 670px) {
     .vectorContainer{
         top: 530px !important;
-        // img {
-        //     width: 120vw;
-        //     margin-left: -50px;
-        //     transform: rotate(3deg);
-        // }   
     }
    
 }
@@ -627,11 +564,6 @@
 @media screen and (max-width: 600px) {
     .vectorContainer{
         top: 540px !important;
-        // img {
-        //     width: 120vw;
-        //     margin-left: -50px;
-        //     transform: rotate(3deg);
-        // }   
     }
   
     .myTextContainer {
@@ -658,8 +590,6 @@
         }
     }
     .leftLine {
-        // min-width: 60px !important;
-        // margin-right: 8px !important;
         display: none;
     }
     .rightLine {
@@ -675,15 +605,9 @@
             margin-left: 6px !important;
         }
         span {
-            // font-size: 18px;
             display: none;
         }
-
     }
-    // .leftLine {
-    //     display: none;
-    // }
-    
 }
 
 @media screen and (max-width: 500px) {
@@ -892,24 +816,3 @@
     }
 }
 
-// @media (max-width: 370px){
-//     .mainContainer {
-//         display: none !important;
-//     }
-//     .landingSocialContent {
-//         display: none !important;
-//     }
-//     .myTextContainer {
-//         display: none !important;
-//     }
-//     .scrollDown {
-//         display: none !important;
-//     }
-    
-//     .vectorContainer {
-//         display: none !important;
-//     }
-    // .landingContactSection{
-    //     display: none !important;
-    // }
-// }

@@ -22,7 +22,7 @@ export class AboutmeComponent implements OnInit{
  
 
   ngOnInit(): void { 
-    // this.animationService.applyAnimation();
+    this.animationService.applyAnimation();
     this.lang = localStorage.getItem('lang') || 'en';
     this.german = this.lang === 'de';
     this.translate.use(this.lang);

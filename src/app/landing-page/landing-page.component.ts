@@ -9,7 +9,7 @@ import { ContactformComponent } from './contactform/contactform.component';
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule, FirstSectionComponent, AboutmeComponent, MySkilsComponent, PortfolioComponent, ContactformComponent],
+  imports: [CommonModule, FirstSectionComponent, AboutmeComponent, MySkilsComponent, PortfolioComponent, ContactformComponent, FirstSectionComponent, AboutmeComponent, MySkilsComponent, PortfolioComponent, ContactformComponent],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })
