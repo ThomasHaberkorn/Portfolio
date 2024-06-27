@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit{
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService, private router: Router) { }
   isMenuOpen = false;
   lang: string = '';
 
@@ -37,7 +38,7 @@ export class NavbarComponent implements OnInit{
   }
 
   openMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    this.isMenuOpen = this.isMenuOpen;
     const mobileContainer = document.getElementById('mobileContainer');
     if (mobileContainer?.classList.contains('d-none')) {
       mobileContainer.classList.remove('d-none');
@@ -46,11 +47,26 @@ export class NavbarComponent implements OnInit{
     }
   }
 
-  scrollToSection(section: string) {
-    const element = document.querySelector(section);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.openMenu(); 
-  }
+  // scrollToSection(section: string) {
+  //   const element = document.querySelector(section);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  //   this.openMenu(); 
+  // }
+
+
+ 
+  // navigateToSection(section: string) {
+  //   if (section.startsWith('/')) {
+  //     // Navigiere zu einer anderen Seite
+  //     this.router.navigate([section]);
+  //   } else {
+  //     // Scrollen zu einer Sektion auf der aktuellen Seite
+  //     const element = document.querySelector(section);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }
+  // }
 }
