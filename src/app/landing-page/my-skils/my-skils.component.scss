@@ -233,12 +233,7 @@
     }
     
   }
-  
-@media (max-width: 850px) {
-    .blur {
-        top: -150px !important;
-    }
-}
+
 
 @media (max-width: 800px) {
     .mainContainer {
@@ -269,8 +264,7 @@
         }
     }
       .blur {
-        top: -80px !important;
-        left: -150px !important;
+        
         width: 200px !important;
       }
 }
@@ -346,6 +340,10 @@
         }
         
     }
+    .blur {
+        width: 180px !important;
+       top: 1800px !important;
+    }
 }
 
 @media (max-width: 380px) {
@@ -384,6 +382,10 @@
             }
         }
         
+    }
+    .blur {
+        width: 160px !important;
+       top: 2000px !important;
     }
    
 }
