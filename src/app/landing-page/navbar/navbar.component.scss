@@ -230,6 +230,7 @@ p {
     background-color: #141D2F;
     margin: 0;
     padding: 0;
+
 }
 
 .navMainContainer {
@@ -239,16 +240,16 @@ p {
     justify-content: space-between;
     align-items: center;
     background-color: #141D2F;
-    max-width: 1920px;
+    max-width: 1400px;
+    margin-left: 30px;
+    margin-right: 30px;
 
     .nameContainer {
         font-size: 42px;
         font-weight: 700;
-        margin-left: 30px;
     }
 
     .navContainer {
-        margin-right: 30px;
         margin-bottom: -2px;
         font-size: 28px;
         font-weight: 200;
@@ -299,7 +300,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 20px;
+        // margin-right: 20px;
 
         .burgerLine {
             width: 30px;

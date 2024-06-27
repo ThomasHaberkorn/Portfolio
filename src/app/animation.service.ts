@@ -28,7 +28,8 @@ export class AnimationService {
 
   public applyAnimation(): void {
     this.observer.disconnect(); // Entfernen Sie alte Beobachtungen
-    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight, .hiddenUpDown');
+    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight, .hiddenUpDown, .hiddenRightSec');
     hiddenElements.forEach((el) => this.observer.observe(el));
   }
 }
+

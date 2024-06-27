@@ -1,5 +1,5 @@
 .mainContainer {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,10 @@
 .innerContainer {
     position: relative;
     z-index: 6 ;
-    max-width: 1400px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +121,7 @@
 @media (max-width: 1500px) {
     .mainContainer {
         .innerContainer {
-            max-width: 1300px;
+            // max-width: 1300px;
             .textContainer {
                 .textContent{
                     .textAlignRight {
@@ -139,7 +142,7 @@
     }
     .mainContainer {
         .innerContainer {
-            max-width: 1150px;
+            // max-width: 1150px;
             .imageContainer {
                 .skill {
                     width: 75px;
@@ -157,7 +160,7 @@
     }
     .mainContainer {
         .innerContainer {
-            max-width: 950px;
+            // max-width: 950px;
             .imageContainer {
                 .skill {
                     width: 70px;

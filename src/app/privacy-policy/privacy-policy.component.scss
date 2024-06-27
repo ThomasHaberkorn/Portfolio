@@ -2,11 +2,15 @@ div.mainContainer {
     display: flex;
     justify-content: center;
     align-items: center ;
+    width: 100vw;
     
     .privacyContent {
-        width: 86%;
+        max-width: 1440px;
+        width: 100%;
         margin-top: 150px;
         margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
         p{
         text-align: justify;
         }

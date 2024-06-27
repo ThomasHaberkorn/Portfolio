@@ -203,7 +203,7 @@
 }
 
 .upContainer {
-    width: 100%;
+    width: 100vw;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -444,7 +444,7 @@
                 width: 30px !important;
                 height: 30px !important;
                 margin-right: 20px !important;
-                margin-top: -30px !important;
+                margin-top: -15px !important;
             }
         }
     }

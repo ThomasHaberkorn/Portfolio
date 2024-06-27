@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './landing-page/navbar/navbar.component';
 import { FooterComponent } from './landing-page/footer/footer.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
@@ -26,11 +26,22 @@ import { ReactiveFormsModule } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'portfolio';
 
-  constructor(private translateService: TranslateService) {
+  constructor(private translateService: TranslateService, private router: Router) {
+
     this.translateService.setDefaultLang('en');
     this.translateService.use(localStorage.getItem('lang') || 'en');
+  }
+
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (this.router.url === '/imprint' || this.router.url === '/privacy-policy') {
+          window.scrollTo(0, 0);  
+        }
+      }
+    });
   }
 }
