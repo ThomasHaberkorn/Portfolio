@@ -23,7 +23,6 @@
         background-color: #70E61C;
         flex-grow: 1;
         min-width: 100px;
-        margin-bottom: -100px;
     }
     .aboutMeContainer {
         display: flex ;
@@ -32,7 +31,7 @@
         width: 100%;
         max-width: 1400px;
         z-index: 5;
-        
+        margin-bottom: 100px;
         .aboutInnerContent {
             width: 60%;
             padding-left: 20px;
@@ -86,7 +85,7 @@
     z-index: 3;
     right: -180px;
     opacity: 0.7;
-    margin-top: -50px
+    margin-top: -70px
 }
 
 @media (max-width: 1500px) {

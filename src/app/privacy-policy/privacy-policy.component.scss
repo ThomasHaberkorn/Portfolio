@@ -28,7 +28,7 @@ div.mainContainer {
 @media (max-width: 700px){
     .mainContainer{
         .privacyContent{
-            width: 90%;
+            width: 90% !important;
             h1{
                 font-size: 36px !important;
             }
@@ -41,7 +41,7 @@ div.mainContainer {
 @media (max-width: 500px){
     .mainContainer{
         .privacyContent{
-            width: 90%;
+            width: 85% !important;
             h1{
                 font-size: 28px!important;
             }
@@ -54,7 +54,6 @@ div.mainContainer {
 @media (max-width: 400px){
     .mainContainer{
         .privacyContent{
-            width: 90%;
             h1{
                 font-size: 24px!important;
             }

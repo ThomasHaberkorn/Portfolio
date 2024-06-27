@@ -64,6 +64,6 @@ export class FirstSectionComponent implements OnInit{
         if (container) {
             container.removeChild(notification);
         }
-    }, 5000);
+    }, 4000);
 }
 }

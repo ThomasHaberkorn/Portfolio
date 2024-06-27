@@ -22,7 +22,7 @@ export class AboutmeComponent implements OnInit{
  
 
   ngOnInit(): void { 
-    this.animationService.applyAnimation();
+    
     this.lang = localStorage.getItem('lang') || 'en';
     this.german = this.lang === 'de';
     this.translate.use(this.lang);
@@ -32,14 +32,7 @@ export class AboutmeComponent implements OnInit{
     }); 
    }
 
-   ngAfterViewInit(): void {
-    this.applyAnimations();
-    window.addEventListener('resize', () => this.applyAnimations());
-  }
-
-  applyAnimations(): void {
-    this.animationService.applyAnimation();
-  }
+  
 
    switchLanguage(lang: any) {
     const language = lang.target.value;

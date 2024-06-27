@@ -15,7 +15,8 @@ export class AnimationService {
           } else {
             entry.target.classList.add('show');
           }
-        } else {
+        }
+        else {
           if (entry.target.classList.contains('hiddenUpDown')) {
             entry.target.classList.remove('showUpDown');
           } else {
@@ -24,12 +25,13 @@ export class AnimationService {
         }
       });
     });
+
   }
 
   public applyAnimation(): void {
-    this.observer.disconnect(); // Entfernen Sie alte Beobachtungen
-    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight, .hiddenUpDown, .hiddenRightSec');
+    this.observer.disconnect(); 
+    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight');
     hiddenElements.forEach((el) => this.observer.observe(el));
   }
-}
 
+}
