@@ -2,9 +2,9 @@
     <div class="navMainContainer">
         <div class="nameContainer"><span class="green">T</span>h<span class="purple">o</span>mas</div>
         <div class="navContainer">
-            <a (click)="scrollToSection('#aboutMe')">{{ 'aboutMe' | translate }}</a>
-            <a (click)="scrollToSection('#skills')">Skills </a>
-            <a (click)="scrollToSection('#portfolio')">Portfolio </a>
+            <a href="#aboutMe" (click)="openMenu()">{{ 'aboutMe' | translate }}</a>
+            <a href="#skills" (click)="openMenu()">Skills</a>
+            <a href="#portfolio" (click)="openMenu()">Portfolio </a>
             <label class="switch">
                 <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
                 <span class="slider round">
@@ -19,10 +19,10 @@
             <div class="burgerLine"></div>
         </div>
         <div class="" id="mobileContainer">
-            <a (click)="scrollToSection('#aboutMe')">{{ 'aboutMe' | translate }}</a>
-            <a (click)="scrollToSection('#skills')">Skills </a>
-            <a (click)="scrollToSection('#portfolio')">Portfolio </a>
-            <a (click)="scrollToSection('#contact')">{{ 'contact' | translate }}</a>
+            <a href="#aboutMe" (click)="openMenu()">{{ 'aboutMe' | translate }}</a>
+            <a href="#skills" (click)="openMenu()">Skills </a>
+            <a href="#portfolio" (click)="openMenu()">Portfolio </a>
+            <a href="#contact" (click)="openMenu()">{{ 'contact' | translate }}</a>
             <label class="switch">
                 <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
                 <span class="slider round">
@@ -33,39 +33,3 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="mainContainer">
-    <div class="navMainContainer">
-        <div class="nameContainer"><span class="green">T</span>h<span class="purple">o</span>mas</div>
-        <div class="navContainer">
-            <a routerLink="/aboutMe">{{ 'aboutMe' | translate }}</a>
-            <a routerLink="/skills">Skills </a>
-            <a routerLink="/portfolio">Portfolio </a>
-            <label class="switch">
-                <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
-                <span class="slider round">
-                    <img src="assets/flags/flag-en.png" class="flag-icon flag-icon-left" alt="English">
-                    <img src="assets/flags/flag-de.png" class="flag-icon flag-icon-right" alt="Deutsch">
-                </span>
-            </label>
-        </div>
-        <div class="burgerMenu" [ngClass]="{'open': isMenuOpen}" (click)="openMenu()">
-            <div class="burgerLine"></div>
-            <div class="burgerLine"></div>
-            <div class="burgerLine"></div>
-        </div>
-        <div class="" id="mobileContainer">
-            <a routerLink="/aboutMe" (click)="openMenu()">{{ 'aboutMe' | translate }} </a>
-            <a routerLink="/skills" (click)="openMenu()">Skills </a>
-            <a routerLink="/portfolio" (click)="openMenu()">Portfolio </a>
-            <a routerLink="/contact" (click)="openMenu()">{{ 'contact' | translate }}</a>
-            <label class="switch">
-                <input type="checkbox" (change)="switchLanguage(isEnglish() ? 'de' : 'en')" [checked]="isEnglish()">
-                <span class="slider round">
-                    <img src="assets/flags/flag-en.png" class="flag-icon flag-icon-left" alt="English">
-                    <img src="assets/flags/flag-de.png" class="flag-icon flag-icon-right" alt="Deutsch">
-                </span>
-            </label>
-        </div>
-    </div>
-</div> -->
