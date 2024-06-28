@@ -49,8 +49,11 @@
                     <div class="privacy">
                         <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox"
                             class="custom-checkbox" id="privacy" name="privacy" required>
-                        <label for="privacy">{{ "privacyEnter" | translate }}
+                        <!-- <label for="privacy">{{ "privacyEnter" | translate }}
                             <a [routerLink]="['/privacy-policy']"> {{ "privacyPolicy" | translate }} </a>
+                            {{ "privacyRead" | translate }}</label> -->
+                        <label for="privacy">{{ "privacyEnter" | translate }}
+                            <a routerLink="/privacy-policy"> {{ "privacyPolicy" | translate }} </a>
                             {{ "privacyRead" | translate }}</label>
 
                     </div>
