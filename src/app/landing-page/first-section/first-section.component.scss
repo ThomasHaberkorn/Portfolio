@@ -1,818 +1,719 @@
-
 .d-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.mainContainer {
+.bodyContainer {
+  width: 100vw;
+  height: 100vh;
+  .mainContainer {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     .innerContent {
-        max-width: 1920px;
-        .scrollDown {
-            position: relative;
-            width: 30px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1440px;
+      .content {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        max-width: 1440px;
+        overflow: visible;
+        left: 0;
+        .myImg {
+          width: 38%;
+          z-index: 1;
+          img:nth-of-type(1) {
+            width: 750px;
             height: auto;
-            top: -100px;
-            right: -96%;
-            color: #70E61C;
-            z-index: 7;
-            animation: moveUpDown 2s infinite;
+            position: relative;
+          }
+          img:nth-of-type(2) {
+            width: 450px;
+            height: auto;
+            position: absolute;
+          }
         }
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding-top: 180px;
-            overflow: visible;
-            .myImg {
-                width: 38%;
-                z-index: 1;
-                img:nth-of-type(1) {
-                    width: 600px;
-                    height: auto;
-                    position: relative;
-                }
-                
-                img:nth-of-type(2) {
-                    width: 360px;
-                height: auto;
-                position: absolute;
-                }
-            }
-            
-            
-        }
+      }
     }
-}
+  }
 
-
-.landingSocialContent {
+  .landingSocialContent {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 9;
-    margin-top: -200px;
+    bottom: 7vh;
     .leftLine {
-        
-        height: 3px;
-        background-color: #9747ff;
-        flex-grow: 1;
-        border-radius: 4px;
-        min-width: 100px;
-        margin-right: 16px;
+      height: 3px;
+      background-color: #9747ff;
+      flex-grow: 1;
+      border-radius: 4px;
+      min-width: 100px;
+      margin-right: 16px;
     }
     .rightLine {
-        flex-grow: 1;
+      flex-grow: 1;
     }
     .landingContactSection {
-        display: flex;
-        align-items: center;
-        margin-top: 0px;
-        width: 100%;
-        max-width: 1400px;
-        
-            img {
-                position: relative;
-                z-index: 5;
-                margin-right: 16px;
-                transition: transform 0.5s ease-in-out;
-                width: 30px;
-                height: auto;
-                cursor: pointer;
-                &:hover {
-                    animation: rotateIn 0.5s ease-in-out;
-                    transform: rotate(360deg);
-                }
-        
-                &:mouseleave {
-                    animation: rotateOut 0.5s ease-in-out;
-                    transform: rotate(0deg);
-                }
-    
-            }
-            span {
-                position: relative;
-                z-index: 5;
-                text-decoration: none;
-                color: white;
-                font-size: 28px;
-                font-weight: 200;
-                margin-left: 10px;
-                &:hover {
-                    color: #70E61C;
-                }
-            }
-          }    
-        
-    }
-
-
-@keyframes rotateIn {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotateOut {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-
-
-.myTextContainer {
-    z-index: 3;
-    
-    p {
-        transform: rotate(-90deg);
-        font-size: 52px;
-        width: 124px;
-        margin-right: -35px;
-        margin-top: -98px;
-    }
-    .iAmDE {
-        transform: rotate(-90deg);
-        font-size: 34px;
-        width: 122px;
-        margin-right: -39px;
-        margin-top: -98px;
-    } 
-    .myText {   
-        .myName {
-            font-size: 80px;
-            line-height: 70px;
-            font-weight: 700;
-            margin: 0;
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      width: 100%;
+      max-width: 1400px;
+      img {
+        position: relative;
+        z-index: 5;
+        margin-right: 16px;
+        transition: transform 0.5s ease-in-out;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        &:hover {
+          animation: rotateIn 0.5s ease-in-out;
+          transform: rotate(360deg);
         }
-        
-        h2 {
-            font-size: 58px;
-            line-height: 48px;
-            font-weight: 400;
-            color: #9747FF;
-            margin: 0;
+        &:mouseleave {
+          animation: rotateOut 0.5s ease-in-out;
+          transform: rotate(0deg);
         }
+      }
+      span {
+        position: relative;
+        z-index: 5;
+        text-decoration: none;
+        color: white;
+        font-size: 28px;
+        font-weight: 200;
+        margin-left: 10px;
+        &:hover {
+          color: #70e61c;
+        }
+      }
     }
+  }
 
-}
+  @keyframes rotateIn {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
-  .lets-talk-button {
-                background-color: #70E61C;
-                color: whitesmoke;
-                padding: 10px 20px;
-                border-radius: 10px;
-                font-size: 28px;
-                margin-top: 40px;
-                margin-left: 30%;
-                z-index: 3;
-                border-style: none;
-                cursor: pointer;
-                &:hover {
-                    transition: 0.5s;
-                    transform: scale(1.1);
-                }
-            }
+  @keyframes rotateOut {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
-.vectorContainer {
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .vectorContainer {
     width: 100vw;
-    height: 30vw;
+    height: 31%;
     position: absolute;
-    top: 155px;
     left: 0;
+    bottom: 0;
     z-index: 1;
     overflow: hidden;
     img {
-        width: 107vw;
-        height: 80%;
+      width: 107vw;
+      height: 80%;
+      object-fit: fill;
     }
-    
+  }
+
+  .scroll {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .scrollInner {
+      position: absolute;
+      max-width: 1440px;
+      width: 100%;
+      height: 15%;
+      bottom: 0;
+      z-index: 7;
+      display: flex;
+      justify-content: flex-end;
+      .scrollDown {
+        margin-right: 10px;
+        width: 23px;
+        height: 140px;
+        color: #70e61c;
+        z-index: 7;
+        animation: moveUpDown 2s infinite;
+      }
+    }
+  }
 }
 
+.myTextContainer {
+  z-index: 3;
+  p {
+    transform: rotate(-90deg);
+    font-size: 52px;
+    width: 124px;
+    margin-right: -35px;
+    margin-top: -98px;
+  }
+  .iAmDE {
+    transform: rotate(-90deg);
+    font-size: 34px;
+    width: 122px;
+    margin-right: -39px;
+    margin-top: -98px;
+  }
+  .myText {
+    .myName {
+      font-size: 78px;
+      line-height: 70px;
+      font-weight: 700;
+      margin: 0;
+    }
+    h2 {
+      font-size: 58px;
+      line-height: 48px;
+      font-weight: 400;
+      color: #9747ff;
+      margin: 0;
+    }
+  }
+}
 
+.lets-talk-button {
+  background-color: #70e61c;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 28px;
+  margin-top: 40px;
+  margin-left: 30%;
+  z-index: 3;
+  border-style: none;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+}
 
 @keyframes moveUpDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-15px); 
-    }
-    100% {
-        transform: translateY(0); 
-    }
-}
-
-
-@media screen and (max-width: 6000px) {
-    .vectorContainer{
-        top: 155px !important;
-    }
-    .landingContactSection {
-        margin-top: -210px;
-    }
-}
-
-@media screen and (max-width: 5500px) {
-    .vectorContainer{
-        top: 195px !important;
-    }
-}
-
-@media screen and (max-width: 5000px) {
-    .vectorContainer{
-        top: 230px !important;
-    }
-    .landingContactSection {
-        margin-top: -210px;
-    }
-    .scrollDown {
-        top: -140px !important;
-    }
-}
-
-@media screen and (max-width: 4500px) {
-    .vectorContainer{
-        top: 270px !important;
-    }
-}
-
-
-@media screen and (max-width: 4000px) {
-    .vectorContainer{
-        top: 310px !important;
-    }
-    .landingContactSection {
-        margin-top: -210px;
-    }
-}
-
-@media screen and (max-width: 3500px) {
-    .vectorContainer{
-        top: 355px !important;
-    }
-}
-
-@media screen and (max-width: 3000px) {
-    .vectorContainer{
-        top: 400px !important;
-    }
-}
-
-@media screen and (max-width: 2500px) {
-    .vectorContainer{
-        top: 440px !important;
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 2200px) {
-    .vectorContainer{
-        top: 470px !important;
-    }
-    .landingContactSection {
-        margin-top: -210px;
-    }
-}
-
-
-@media (max-width: 1920px) {
-    .content {
-        padding-top: 140px;
-        margin-top: 3vw;
-    }
-    .vectorContainer{
-        top: 530px !important;
-    }
-}
-
-@media screen and (max-width: 1900px) {
-    .vectorContainer{
-        top: 540px !important;
-    }
-}
-
-@media screen and (max-width: 1700px) {
-    .vectorContainer{
-        top: 540px !important;
-    }
-  
-   }
-
-@media screen and (max-width: 1600px) {
-    .vectorContainer{
-        top: 540px !important;
+  .content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+    left: 0;
+    .myImg {
+      width: 38%;
+      z-index: 1;
+      img:nth-of-type(1) {
+        width: 600px !important;
+        height: auto;
+        position: relative;
+      }
+      img:nth-of-type(2) {
+        width: 380px !important;
+        height: auto;
+        position: absolute;
+      }
     }
     .myTextContainer {
-        p {
-            font-size: 46px;
-            width: 120px;
-        };
-        .iAmDE {
-            font-size: 31px;
+      p {
+        font-size: 48px;
+        width: 125px;
+      }
+      .iAmDE {
+        font-size: 31px;
+        width: 122px;
+      }
+      .myText {
+        .myName {
+          font-size: 72px;
+          line-height: 66px;
         }
-        .myText {
-            .myName {
-                font-size: 70px;
-                line-height: 66px;
-            }
-            h2 {
-                font-size: 48px;
-                line-height: 44px;
-            }
-            .lets-talk-button{
-                margin-top: 30px;
-            }
+        h2 {
+          font-size: 53px;
+          line-height: 44px;
         }
+        .lets-talk-button {
+          margin-top: 30px;
+        }
+      }
     }
+  }
+  .vectorContainer {
+    height: 38% !important;
+  }
 }
 
-@media screen and (max-width: 1500px) {
-    .vectorContainer{
-        top: 530px !important;
+@media screen and (max-width: 1600px) {
+  .myTextContainer {
+    p {
+      font-size: 46px !important;
+      width: 120px !important;
     }
-    .content {
-        padding-top: 110px;
+    .iAmDE {
+      font-size: 31px !important;
     }
-    
+    .myText {
+      .myName {
+        font-size: 70px !important;
+        line-height: 66px !important;
+      }
+      h2 {
+        font-size: 48px !important;
+        line-height: 44px !important;
+      }
+      .lets-talk-button {
+        margin-top: 30px !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1400px) {
-    .vectorContainer{
-        top: 520px !important;
+  .content {
+    flex-direction: column;
+    .myImg {
+      width: 38%;
+      z-index: 1;
+      img:nth-of-type(1) {
+        width: 500px !important;
+        height: auto;
+        position: relative;
+      }
+      img:nth-of-type(2) {
+        width: 340px !important;
+        height: auto;
+        position: absolute;
+      }
     }
-    .landingContactSection {
-        .leftLine {
-            margin-left: -600px;
-        
-        }
+  }
+  .vectorContainer {
+    height: 56% !important;
+    .vector {
+      height: 70% !important;
     }
-}
-
-@media screen and (max-width: 1300px) {
-    .vectorContainer{
-        top: 540px !important;
-    }
-    .myTextContainer {
-        p {
-            font-size: 37px;
-            width: 110px;
-        };
-        .iAmDE {
-            font-size: 25px;
-            width: 111px;
-        }
-        .myText {
-            .myName {
-                font-size: 55px;
-                line-height: 55px;
-            }
-            h2 {
-                font-size: 40px;
-                line-height: 36px;
-            }
-            .lets-talk-button{
-                margin-top: 25px;
-                font-size: 25px;
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .landingContactSection {
-        span {
-            font-size: 24px !important;
-        }
+  .landingContactSection {
+    span {
+      font-size: 24px !important;
     }
-    .myTextContainer {
-        p {
-            font-size: 36px;
-            width: 107px;
-        };
-        .iAmDE {
-            margin-right: -45px;
-            font-size: 24px;
-            width: 124px;
-        }
-        .myText {
-            .myName {
-                font-size: 50px;
-                line-height: 50px;
-            }
-            h2 {
-                font-size: 36px;
-                line-height: 32px;
-            }
-            .lets-talk-button{
-                margin-top: 16px !important;
-                font-size: 21px !important;
-            }
-        }
-    }
- 
-    .vectorContainer{
-        top: 560px !important;
-    }
+  }
 }
 
 @media screen and (max-width: 1100px) {
-
-    .vectorContainer{
-    top: 560px !important;
+  .myTextContainer {
+    z-index: 3;
+    p {
+      transform: rotate(-90deg);
+      font-size: 42px !important;
+      width: 110px !important;
+      margin-right: -35px;
+      margin-top: -98px;
     }
-    .landingContactSection {
-        margin-top: -40px;
+    .iAmDE {
+      transform: rotate(-90deg);
+      font-size: 28px !important;
+      width: 109px !important;
+      margin-right: -39px;
+      margin-top: -98px;
     }
-    .content{
-        padding-top: 110px;
+    .myText {
+      .myName {
+        font-size: 64px !important;
+        line-height: 60px !important;
+        margin: 0;
+      }
+      h2 {
+        font-size: 44px !important;
+        line-height: 42px !important;
+        color: #9747ff;
+        margin: 0;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .vectorContainer{
-        top: 530px !important;
+  .myTextContainer {
+    margin-left: -43px;
+    p {
+      font-size: 40px !important;
+      width: 112px !important;
     }
+    .iAmDE {
+      font-size: 26px !important;
+      width: 111px !important;
+    }
+    .myText {
+      .myName {
+        font-size: 50px !important;
+      }
+      h2 {
+        margin-top: 0px;
+        font-size: 38px !important;
+      }
+      .lets-talk-button {
+        width: 240px;
+        font-size: 24px;
+        margin-left: 70px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .innerContent {
+    overflow: hidden !important;
     .content {
-        flex-direction: column;
-    }
-    .myTextContainer {
-        margin-top: 140px;
-        margin-left: -6vw;
-        margin-bottom: 5vw;
-        
-            p {
-                font-size: 35px;
-                width: 117px;
-            }
-            .iAmDE {
-                font-size: 23px;
-                width: 118px;
-            }
-            .myText {
-                
-                .myName {
-                    font-size: 50px;
-                }
-                h2 {
-                    margin-top: 0px;
-                    font-size: 38px;
-                }
-                .lets-talk-button {
-                    width: 240px;
-                    font-size: 24px;
-                    margin-left: 70px;
-                    margin-top: 10px;
-                }
-            }
-        
-    }
-    .myImg {
+      position: absolute;
+      margin-top: 0px !important;
+      .myImg {
         img:nth-of-type(1) {
-            width: 500px !important;
-            margin-bottom: -150px !important;
+          width: 500px !important;
+          height: auto;
+          position: relative;
         }
         img:nth-of-type(2) {
-            width: 280px !important;
-            margin-top: 100px !important;
+          width: 280px !important;
+          height: auto;
+          position: absolute;
         }
+      }
     }
-    .landingContactSection {
-        img {
-            width: 35px;
-        }
-        a {
-            font-size: 20px;
-        }
-    }
-    .scrollDown {
-        display: none !important;
-    }
-   
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .vectorContainer{
-        top: 520px !important;
-       
-        img {
-            height: 95%;
-        }
+  .landingContactSection {
+    span {
+      font-size: 20px !important;
     }
-    
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .scroll {
+    display: none !important;
+  }
+  .vectorContainer {
+    height: 48% !important;
+    .vector {
+      height: 50% !important;
+    }
+  }
+  .landingSocialContent {
+    margin-top: -10px !important;
+    bottom: 12vh !important;
+    .leftLine {
+      display: none;
+    }
+    .rightLine {
+      display: none;
+    }
     .landingContactSection {
-        span {
-            font-size: 20px !important;
-        }
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .vectorContainer{
-        top: 520px !important;
-    }
-    .landingContactSection{
-        margin-top: 0px;
-    }
-    .myTextContainer{
-        margin-top: 120px;
-    }
-    .scrollDown {
+      justify-content: center !important;
+      gap: 40px;
+      span {
         display: none;
+      }
     }
-    .landingSocialContent {
-        margin-top: -10px !important;
-    
+  }
+  .lets-talk-button {
+    font-size: 24px !important;
+    margin-left: 103px !important;
+  }
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 600px !important;
+        }
+        img:nth-of-type(2) {
+          width: 400px !important;
+        }
+      }
     }
-}
-
-@media screen and (max-width: 670px) {
-    .vectorContainer{
-        top: 530px !important;
-    }
-   
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .vectorContainer{
-        top: 540px !important;
+  .myTextContainer {
+    p {
+      font-size: 32px !important;
+      width: 85px !important;
+      margin-right: -26px !important;
     }
-  
-    .myTextContainer {
-        p {
-            font-size: 32px;
-            width: 112px;
-        }
-        .iAmDE {
-            font-size: 21px;
-            width: 107px;
-            margin-right: -7vw;
-        }
-        .myText {
-            span {
-                font-size: 40px !important;
-            }
-            h2 {
-                font-size: 32px !important;
-            }
-            .lets-talk-button {
-                font-size: 24px !important;
-                margin-left: 60px !important;
-            }
-        }
+    .iAmDE {
+      font-size: 21px !important;
+      width: 85px !important;
+      margin-right: -5vw !important;
     }
-    .leftLine {
-        display: none;
+    .myText {
+      .myName {
+        font-size: 40px !important;
+        line-height: 39px !important;
+      }
+      h2 {
+        font-size: 32px !important;
+      }
     }
-    .rightLine {
-        display: none;
-    }
-    .landingContactSection {
-        margin-top: 20px !important;
-        justify-content: center;
-        gap: 40px;
-        img {
-            width: 32px !important;
-            margin-right: 6px !important;
-            margin-left: 6px !important;
+  }
+  .lets-talk-button {
+    font-size: 24px !important;
+    margin-left: 65px !important;
+  }
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 500px !important;
         }
-        span {
-            display: none;
+        img:nth-of-type(2) {
+          width: 280px !important;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .vectorContainer {
-        top: 440px !important;
-        }
-    .landingContactSection {
-        justify-content: center !important;
-        gap: 20px;
-        .leftLine {
-            width: 22vw;
-            margin-left: -28.5vw;
-        }
-        img {
-            width: 35px;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-        a {
-            display: none;
-        }
-        .innerDiv {
-            margin-bottom: -10px;
-        }    
+  .landingContactSection {
+    justify-content: center !important;
+    gap: 20px;
+    .leftLine {
+      width: 22vw;
+      margin-left: -28.5vw;
     }
+    img {
+      width: 35px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    a {
+      display: none;
+    }
+    .innerDiv {
+      margin-bottom: -10px;
+    }
+  }
+  .innerContent {
     .content {
-        margin-top: -130px !important;
-        .myImg{
-            margin-top: 100px;
-            margin-bottom: 50px;
-            img:nth-of-type(1) {
-                width: 350px !important;
-                margin-bottom: -100px !important;
-            }
-            img:nth-of-type(2) {
-                width: 220px !important;
-                margin-top: 100px !important;
-            }
-        
+      .myImg {
+        img:nth-of-type(1) {
+          width: 350px !important;
+          margin-bottom: -100px !important;
         }
+        img:nth-of-type(2) {
+          width: 220px !important;
+          margin-top: 100px !important;
+        }
+      }
     }
-    
-    .myTextContainer {
-        margin-top: 90px;
-        
+  }
+  .myTextContainer {
+    margin-top: 90px;
+    .iAmDE {
+      font-size: 17px !important;
+      width: 80px !important;
+      margin-right: -6vw !important;
+    }
+    p {
+      font-size: 26px !important;
+      width: 83px !important;
+      margin-right: -30px !important;
+    }
+    .myText {
+      .myName {
+        font-size: 35px !important;
+        line-height: 35px !important;
+      }
+      h2 {
+        font-size: 28px !important;
+        line-height: 25px !important;
+      }
+      .lets-talk-button {
+        margin-left: 40px !important;
+        font-size: 22px !important;
+      }
+    }
+  }
+  .landingSocialContent {
+    bottom: 11vh !important;
+    .landingContactSection {
+      gap: 20px !important;
+      margin-right: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .vectorContainer {
+    img {
+      width: 120vw;
+      transform: rotate(7deg);
+    }
+  }
+  .myTextContainer {
+    margin-top: 55px !important;
+    .iAmDE {
+      margin-right: -41px !important;
+      width: 103px !important;
+    }
+    p {
+      font-size: 25px !important;
+      width: 103px !important;
+      margin-right: -39px;
+    }
+    .myText {
+      .myName {
+        font-size: 28px !important;
+      }
+      h2 {
+        margin-top: 3px;
+        font-size: 24px !important;
+      }
+      .lets-talk-button {
+        font-size: 20px !important;
+        margin-left: 4px !important;
+        margin-top: 10px !important;
+      }
+    }
+  }
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 335px !important;
+          height: auto;
+          margin-bottom: -110px !important;
+        }
+        img:nth-of-type(2) {
+          width: 190px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .innerContent {
+    .content {
+      .myTextContainer {
+        p {
+          font-size: 24px;
+          width: 101px;
+        }
         .iAmDE {
+          font-size: 16px !important;
+          width: 101px;
+        }
+        .myText {
+          .myName {
+            font-size: 26px !important;
+          }
+          h2 {
+            margin-top: 3px;
+            font-size: 22px !important;
+          }
+          .lets-talk-button {
             font-size: 16px;
-            width: 90px;
+            margin-left: 17px !important;
+            margin-top: 10px;
+            width: 200px;
+          }
         }
-        p {
-            font-size: 26px;
-            width: 96px;
-            margin-right: -34px;
-        }
-        .myText {
-            span {
-                font-size: 35px !important;
-                line-height: 35px  !important;
-            }
-            h2 {
-                font-size: 28px !important;
-                line-height: 25px !important;
-            }
-            .lets-talk-button{
-                margin-left: 40px !important;
-                font-size: 22px !important;
-            }
-        }
-        
+      }
     }
-    
-}
-
-@media screen and (max-width: 420px) {
-
-    .vectorContainer {
-        top: 410px !important;
-        height: 25% !important;
-        img {
-            width: 120vw;
-            transform: rotate(7deg);
-        }
-    }
-    .myTextContainer {
-        margin-top: 55px !important;
-        margin-left: -55px !important;
-        .iAmDE {
-            margin-right: -40px;
-            width: 101px;
-        }
-        p {
-            font-size: 25px;
-            width: 103px;
-            margin-right: -39px;
-        }
-        .myText {
-            .myName {
-                font-size: 28px !important;
-            }
-            h2 {
-                margin-top: 3px;
-                font-size: 24px !important;
-            }
-            .lets-talk-button {
-                font-size: 20px !important;
-                margin-left: 4px !important;
-                margin-top: 10px !important;
-            }
-        }
-    }
-    .content {
-        margin-top: -105px !important;
-        .myImg {
-            img:nth-of-type(1) {
-                width: 335px !important;
-                height: auto;
-                margin-bottom: -110px !important;
-            }
-            img:nth-of-type(2) {
-                width: 190px !important;
-            }
-       }
-    }
-    .landingContactSection {
-        margin-left: -15px;
-    }
-   
-}
-
-@media (max-width: 370px){
-    .myTextContainer{
-        p {
-            font-size: 24px;
-            width: 101px;
-        }
-        .iAmDE {
-            font-size: 16px !important;
-            width: 101px;
-        }
-        .myText {
-            .myName {
-                font-size: 26px !important;
-            }
-            h2 {
-                margin-top: 3px;
-                font-size: 22px !important;
-            }
-            .lets-talk-button {
-                font-size: 16px;
-                margin-left: 17px !important;
-                margin-top: 10px;
-                width: 200px;
-            }
-        }
-    }
-    .content {
-        margin-top: -105px !important;
-        .myImg {
-            img:nth-of-type(1) {
-                width: 335px !important;
-                margin-bottom: -110px !important;
-            }
-       }
-    }
+  }
 }
 
 @media screen and (max-width: 350px) {
-
-    .vectorContainer {
-        top: 385px !important;
+  .myTextContainer {
+    .myText {
+      .myName {
+        font-size: 26px !important;
+      }
+      h2 {
+        margin-top: 3px;
+        font-size: 20px;
+      }
+      .lets-talk-button {
+        font-size: 18px !important;
+        margin-left: 28px !important;
+        margin-top: 10px;
+        width: 180px;
+      }
     }
-    .myTextContainer {
-      
-        .myText {
-            .myName {
-                font-size: 26px !important;
-            }
-            h2 {
-                margin-top: 3px;
-                font-size: 20px;
-            }
-            .lets-talk-button {
-                font-size: 18px !important;
-                margin-left: 28px !important;
-                margin-top: 10px;
-                width: 180px;
-            }
-        }
+  }
+  .landingContactSection {
+    span {
+      font-size: 18px !important;
     }
-    .landingContactSection {
-        span{
-            font-size: 18px !important;
-        }
-    }
+  }
+  .innerContent {
     .content {
-        margin-top: -105px !important;
-        .myImg {
-            img:nth-of-type(1) {
-                width: 320px !important;
-                margin-bottom: -110px !important;
-            }
-            img:nth-of-type(2) {
-                width: 180px !important;
-            }
-       }
+      .myImg {
+        img:nth-of-type(1) {
+          width: 320px !important;
+          margin-bottom: -110px !important;
+        }
+        img:nth-of-type(2) {
+          width: 180px !important;
+        }
+      }
     }
+  }
 }
 
+@media (max-width: 430px) and (min-height: 700px) {
+  .vectorContainer {
+    height: 50% !important;
+  }
+}

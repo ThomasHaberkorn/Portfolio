@@ -30,7 +30,7 @@ export class AnimationService {
 
   public applyAnimation(): void {
     this.observer.disconnect(); 
-    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight');
+    const hiddenElements = document.querySelectorAll('.hidden, .hiddenRight, hiddenRightSec');
     hiddenElements.forEach((el) => this.observer.observe(el));
   }
 
