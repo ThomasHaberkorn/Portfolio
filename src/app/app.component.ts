@@ -8,6 +8,8 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import gsap from 'gsap';
+
 
 @Component({
   selector: 'app-root',

@@ -1,38 +1,38 @@
-*{
+* {
   scroll-behavior: smooth;
 }
 
 /* poppins-200 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: url('assets/fonts/poppins-v21-latin-200.woff2') format('woff2');
+  src: url("assets/fonts/poppins-v21-latin-200.woff2") format("woff2");
 }
 
 /* poppins-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/poppins-v21-latin-regular.woff2');
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2");
 }
 
 /* poppins-700 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
+  src: url("assets/fonts/poppins-v21-latin-700.woff2") format("woff2");
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: whitesmoke;
-  background-color: #141D2F;
+  background-color: #141d2f;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #70e61c !important; 
+  background: #70e61c !important;
   border-radius: 10px;
   border: 3px solid #141d2f;
 }
@@ -63,7 +63,7 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .notification {
@@ -82,7 +82,8 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
-  10%, 90% {
+  10%,
+  90% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -105,11 +106,10 @@ body {
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.hiddenRightSec{
+.hiddenRightSec {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity 1s ease-out, transform 1s ease-out;
-
 }
 
 .show {
@@ -125,7 +125,8 @@ body {
 }
 
 @keyframes bounceUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -136,12 +137,4 @@ body {
 .showUpDown {
   opacity: 1;
   animation: bounceUpDown 0.5s ease-in-out 0.4s;
-}
-.border {
-  margin-top: -1px;
-  border: 2px solid red;
-}
-.border2 {
-  margin-top: -1px;
-  border: 2px solid blue;
 }

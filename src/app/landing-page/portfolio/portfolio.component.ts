@@ -1,6 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-portfolio',
@@ -24,7 +28,31 @@ export class PortfolioComponent implements OnInit {
       this.lang = event.lang;
       this.german = this.lang === 'de';
     }); 
-   }
+
+    gsap.from('.joinContent', {
+      scale: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.joinContent',
+        start: 'top 90%', // Startpunkt der Animation
+        toggleActions: 'play reverse play reverse',
+       
+      }
+    });
+
+    // Animation für elPollo
+    gsap.from('.elPollo', {
+      scale: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.elPollo',
+        start: 'top 90%', // Startpunkt der Animation
+        toggleActions: 'play reverse play reverse',
+        // markers: true // Entferne dies nach dem Testen
+      }
+    });
+
+  }
 
    switchLanguage(lang: any) {
     const language = lang.target.value;

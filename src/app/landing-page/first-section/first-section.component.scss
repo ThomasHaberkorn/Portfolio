@@ -38,12 +38,12 @@
           width: 38%;
           z-index: 1;
           img:nth-of-type(1) {
-            width: 750px;
+            width: 850px;
             height: auto;
             position: relative;
           }
           img:nth-of-type(2) {
-            width: 450px;
+            width: 600px;
             height: auto;
             position: absolute;
           }
@@ -252,12 +252,12 @@
       width: 38%;
       z-index: 1;
       img:nth-of-type(1) {
-        width: 600px !important;
+        width: 700px !important;
         height: auto;
         position: relative;
       }
       img:nth-of-type(2) {
-        width: 380px !important;
+        width: 550px !important;
         height: auto;
         position: absolute;
       }
@@ -323,19 +323,19 @@
       width: 38%;
       z-index: 1;
       img:nth-of-type(1) {
-        width: 500px !important;
+        width: 700px !important;
         height: auto;
         position: relative;
       }
       img:nth-of-type(2) {
-        width: 340px !important;
+        width: 500px !important;
         height: auto;
         position: absolute;
       }
     }
   }
   .vectorContainer {
-    height: 56% !important;
+    height: 47% !important;
     .vector {
       height: 70% !important;
     }
@@ -417,12 +417,12 @@
       margin-top: 0px !important;
       .myImg {
         img:nth-of-type(1) {
-          width: 500px !important;
+          width: 700px !important;
           height: auto;
           position: relative;
         }
         img:nth-of-type(2) {
-          width: 280px !important;
+          width: 500px !important;
           height: auto;
           position: absolute;
         }
@@ -517,9 +517,15 @@
           width: 500px !important;
         }
         img:nth-of-type(2) {
-          width: 280px !important;
+          width: 350px !important;
         }
       }
+    }
+  }
+  .vectorContainer {
+    height: 49% !important;
+    .vector {
+      height: 50% !important;
     }
   }
 }
@@ -548,11 +554,11 @@
     .content {
       .myImg {
         img:nth-of-type(1) {
-          width: 350px !important;
+          width: 430px !important;
           margin-bottom: -100px !important;
         }
         img:nth-of-type(2) {
-          width: 220px !important;
+          width: 300px !important;
           margin-top: 100px !important;
         }
       }
@@ -586,10 +592,16 @@
     }
   }
   .landingSocialContent {
-    bottom: 11vh !important;
+    bottom: 5vh !important;
     .landingContactSection {
       gap: 20px !important;
       margin-right: 26px;
+    }
+  }
+  .vectorContainer {
+    height: 51% !important;
+    .vector {
+      height: 50% !important;
     }
   }
 }
@@ -631,12 +643,12 @@
     .content {
       .myImg {
         img:nth-of-type(1) {
-          width: 335px !important;
+          width: 400px !important;
           height: auto;
           margin-bottom: -110px !important;
         }
         img:nth-of-type(2) {
-          width: 190px !important;
+          width: 250px !important;
         }
       }
     }
@@ -677,6 +689,7 @@
 
 @media screen and (max-width: 350px) {
   .myTextContainer {
+    margin-top: 75px !important;
     .myText {
       .myName {
         font-size: 26px !important;
@@ -706,9 +719,15 @@
           margin-bottom: -110px !important;
         }
         img:nth-of-type(2) {
-          width: 180px !important;
+          width: 230px !important;
         }
       }
+    }
+  }
+  .vectorContainer {
+    height: 54% !important;
+    .vector {
+      height: 50% !important;
     }
   }
 }
@@ -716,5 +735,103 @@
 @media (max-width: 430px) and (min-height: 700px) {
   .vectorContainer {
     height: 50% !important;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) and (min-height: 800px) and (max-height: 860px) {
+  .vectorContainer {
+    height: 22% !important;
+  }
+}
+
+@media (max-height: 900px) {
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 500px !important;
+          margin-bottom: 0px !important;
+        }
+        img:nth-of-type(2) {
+          width: 450px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 830px) {
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 450px !important;
+          margin-bottom: 35px !important;
+        }
+        img:nth-of-type(2) {
+          width: 400px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 800px) {
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 400px !important;
+          margin-bottom: 35px !important;
+        }
+        img:nth-of-type(2) {
+          width: 350px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) and (max-height: 800px) {
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 350px !important;
+          margin-bottom: 35px !important;
+        }
+        img:nth-of-type(2) {
+          width: 280px !important;
+        }
+      }
+    }
+  }
+  .vectorContainer {
+    height: 37% !important;
+    .vector {
+      height: 50% !important;
+    }
+  }
+}
+
+@media (max-width: 420px) and (max-height: 900px) {
+  .innerContent {
+    .content {
+      .myImg {
+        img:nth-of-type(1) {
+          width: 350px !important;
+          margin-bottom: 35px !important;
+        }
+        img:nth-of-type(2) {
+          width: 280px !important;
+        }
+      }
+    }
+  }
+  .vectorContainer {
+    height: 43% !important;
+    .vector {
+      height: 50% !important;
+    }
   }
 }
